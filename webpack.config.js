@@ -1,26 +1,43 @@
 var path = require('path');
 var webpack = require('webpack');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
+var PWD = require('process-pwd');
 
-module.exports = {
-  devtool: 'eval',
+var config = {
+  devtool: 'source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.NoErrorsPlugin({
+      'process.env.NODE_ENV': '"development"'
+    })
   ],
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
+      loaders: ['babel'],
       include: path.join(__dirname, 'src')
     }]
   }
 };
+
+if (process.env.NODE_ENV === 'production') {
+// if (true) {
+  config.plugins = [
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: {
+        except: ['exports', 'require']
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"production"'
+    })
+  ];
+}
+
+module.exports = config;
