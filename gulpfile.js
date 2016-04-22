@@ -18,39 +18,30 @@ gulp.task('clean', function() {
 });
 
 gulp.task('html', function () {
-  var target = gulp.src('./index.html');
+  var target = gulp.src('./dist/index.html');
 
-  function fileContents (filePath, file) {
-    return file.contents.toString();
-  }
-  function changePath(filePath, file) {
+  function transformContent(filePath, file) {
     var ext = path.extname(path.basename(filePath));
     var temp = '';
     switch(ext){
-      case '.js':
-        temp = '<script src="' + path.relative( '/dist/', filePath) + '"></script>';
-        break;
       case '.css':
-        temp = '<link rel="stylesheet" href="' + path.relative( '/dist/', filePath) + '" />';
+        return '<link rel="stylesheet" href="' + path.relative( '/dist/', filePath) + '" />';
+        break;
+      case '.svg':
+        return file.contents.toString();
         break;
     }
-    return temp;
   }
 
-
-  var vendor = gulp.src(['./dist/css/vendor/**/*.css'], {
-    read: false
-  });
-  var sources = gulp.src(['./dist/bundle.js', './dist/css/*.css'], {
-    read: false
-  });
+  var vendor = gulp.src(['./dist/css/vendor/**/*.css'], {read: false});
+  var sources = gulp.src(['./dist/css/*.css'], {read: false});
 
   var svgstore = gulp.src(['./dist/svg.svg']);
 
   return target
-    .pipe(inject(vendor, {name: 'vendor', transform: changePath }))
-    .pipe(inject(sources, { transform: changePath }))
-    .pipe(inject(svgstore, { transform: fileContents }))
+    .pipe(inject(vendor, {name: 'vendor', transform: transformContent }))
+    .pipe(inject(sources, { transform: transformContent }))
+    .pipe(inject(svgstore, { transform: transformContent }))
     .pipe(gulp.dest('./dist'));
 });
 
@@ -131,12 +122,11 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['src/**/*'], ['webpack']);
+  gulp.watch(['src/**/*'], ['webpack', 'html']);
   gulp.watch('assets/img/**/*', ['img']);
   gulp.watch('assets/vendor/**/*', ['vendor']);
   gulp.watch('assets/svg/**/*', ['svgstore']);
   gulp.watch('assets/sass/**/*.scss', ['sass']);
-  gulp.watch('./index.html', ['html']);
 });
 
 gulp.task('build', function(callback) {

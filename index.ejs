@@ -12,9 +12,11 @@
       <!-- inject:svg -->
       <!-- endinject -->
     </div>
-    <div id='root' data-rcomp="bundle.js">
+    <div id="app">
+      <%- html %>
     </div>
-    <!-- inject:js -->
-    <!-- endinject -->
+    <% for (var chunk in assets) { -%>
+    <script src="<%= assets[chunk] %>"></script>
+    <% } -%>
   </body>
 </html>
