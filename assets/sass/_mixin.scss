@@ -1,0 +1,11 @@
+@mixin gradient($valuefrom, $valueto, $property: 'background'){
+  $property: $valuefrom; /* For browsers that do not support gradients */
+  /* Safari 5.1 to 6.0 */
+  $property: -webkit-repeating-linear-gradient($valuefrom, $valueto);
+  /* Opera 11.1 to 12.0 */
+  $property: -o-repeating-linear-gradient($valuefrom, $valueto);
+  /* Firefox 3.6 to 15 */
+  $property: -moz-repeating-linear-gradient($valuefrom, $valueto);
+  /* Standard syntax */
+  $property: repeating-linear-gradient($valuefrom, $valueto);
+}

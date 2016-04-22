@@ -50,7 +50,7 @@ class Header extends Component {
               <a className='logo' href='/'>
                 <label>FRONT-END CARIOCA</label>
                 <svg className='logo-svg'>
-                  <use xlinkHref='/img/fec_logo.svg'></use>
+                  <use xlinkHref='#fec_logo'></use>
                 </svg>
               </a>
             </Navbar.Brand>

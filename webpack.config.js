@@ -1,7 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var PWD = require('process-pwd');
 
 var config = {
   devtool: 'source-map',

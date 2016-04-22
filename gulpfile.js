@@ -9,7 +9,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./webpack.config.js');
 var webserver = require('gulp-webserver');
 
@@ -21,24 +20,37 @@ gulp.task('clean', function() {
 gulp.task('html', function () {
   var target = gulp.src('./index.html');
 
-  var svgstore = gulp.src(['./dist/svg.svg'], {
-    ignorePath: true,
-    read: false
-  });
+  function fileContents (filePath, file) {
+    return file.contents.toString();
+  }
+  function changePath(filePath, file) {
+    var ext = path.extname(path.basename(filePath));
+    var temp = '';
+    switch(ext){
+      case '.js':
+        temp = '<script src="' + path.relative( '/dist/', filePath) + '"></script>';
+        break;
+      case '.css':
+        temp = '<link rel="stylesheet" href="' + path.relative( '/dist/', filePath) + '" />';
+        break;
+    }
+    return temp;
+  }
+
 
   var vendor = gulp.src(['./dist/css/vendor/**/*.css'], {
-    ignorePath: true,
     read: false
   });
-  var sources = gulp.src(['./dist/bundle.js', './dist/css/*.css', './dist/*.svg'], {
-    ignorePath: true,
+  var sources = gulp.src(['./dist/bundle.js', './dist/css/*.css'], {
     read: false
   });
 
+  var svgstore = gulp.src(['./dist/svg.svg']);
+
   return target
-    .pipe(inject(vendor, {name: 'vendor'}))
-    .pipe(inject(svgstore))
-    .pipe(inject(sources))
+    .pipe(inject(vendor, {name: 'vendor', transform: changePath }))
+    .pipe(inject(sources, { transform: changePath }))
+    .pipe(inject(svgstore, { transform: fileContents }))
     .pipe(gulp.dest('./dist'));
 });
 
@@ -82,18 +94,17 @@ gulp.task('webpack', function(callback) {
   if(process.env.NODE_ENV !== 'production'){
     myConfig.devtool = 'sourcemap';
     myConfig.debug = true;
+    myConfig.plugins = myConfig.plugins.concat(
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+        }
+      }),
+      new webpack.optimize.DedupePlugin(),
+      new webpack.optimize.UglifyJsPlugin()
+    );
   }
   
-  myConfig.plugins = myConfig.plugins.concat(
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin()
-  );
-
   webpack(myConfig, function(err, stats) {
     if(err) throw new gutil.PluginError('webpack', err);
     gutil.log('[webpack]', stats.toString({
@@ -123,6 +134,7 @@ gulp.task('watch', function() {
   gulp.watch(['src/**/*'], ['webpack']);
   gulp.watch('assets/img/**/*', ['img']);
   gulp.watch('assets/vendor/**/*', ['vendor']);
+  gulp.watch('assets/svg/**/*', ['svgstore']);
   gulp.watch('assets/sass/**/*.scss', ['sass']);
   gulp.watch('./index.html', ['html']);
 });

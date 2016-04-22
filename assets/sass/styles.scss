@@ -1,0 +1,24 @@
+@includes '_mixin';
+
+.logo {
+  &-svg {
+    width: 90px;
+    height: 90px;
+  }
+  label {display: none;}
+}
+
+
+.navbar{
+  .container {
+    text-align: center;
+    > * {
+      display: inline-block;
+      float:none;
+      vertical-align: middle;
+    }
+  }
+
+  &-nav { }
+  &-header {}
+}
