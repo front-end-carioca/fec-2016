@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 
-const styles = {
-  height: '700px'
-};
-
-class Home extends Component {
+class Contato extends Component {
   constructor(props){
     super(props);
   }
@@ -14,8 +10,7 @@ class Home extends Component {
     const {key, name, onActiveSection} = this.props;
     return (
       <section key={key} id={name}>
-        <div style={styles}>
-          <img src="" />
+        <div style={{height: '700px', background: `#F0F`}}>
         </div>
         <Waypoint onPositionChange={onActiveSection} />
       </section>
@@ -23,4 +18,4 @@ class Home extends Component {
   }
 };
 
-export default Home;
+export default Contato;

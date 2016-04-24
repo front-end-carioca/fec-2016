@@ -9,27 +9,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [{
-        name: 'HOME', selected: false, active: false 
-      },{
-        name: 'SOBRE', selected: false, active: false
-      },{
-        name: 'PALESTRANTES', selected: false, active: false
-      },{
-        name: 'PROGRAMAÇÃO', selected: false, active: false
-      },{
-        name: 'PATROCÍNIO', selected: false, active: false
-      // },{
-      //   name: 'LOCAL', selected: false, active: false
-      // },{
-      //   name: 'GUIA DE SOBREVIVÊNCIA', selected: false, active: false
-      // },{
-      //   name: 'CONTATO', selected: false, active: false
-      }]
-    };
+      items: []
+    }
   }
   _setActiveSection(name, event) {
-    if(event.event === null && event.currentPosition !== 'inside') return;
+    if(event && event.event === null && event.currentPosition !== 'inside') return;
     const items = this.state.items.map((item)=>{
       item.active = false;
       if(item.name === name){ item.active = true; }
@@ -40,16 +24,18 @@ class App extends Component {
   _getSection(name) {
     return require('./components/'+name).default;
   }
+  componentWillMount(){
+    this.setState(this.props);
+  }
   render() {
     const state = this.state;
     return (
       <div>
         <Header {...state} />
         {state.items.map((section, i)=>{
-          const name = cleanSpecialChars(section.name);
+          const name = cleanSpecialChars(section.name, true, true);
           const Section = this._getSection(name);
-          return <Section key={i} name={name} onActiveSection={this._setActiveSection.bind(this, name)}/>;
-          
+          return <Section key={i} name={name} onActiveSection={this._setActiveSection.bind(this)}/>;
         })}
     	</div>
     );

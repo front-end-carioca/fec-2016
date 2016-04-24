@@ -1,0 +1,35 @@
+{
+  "items": [{
+    "name": "HOME",
+    "selected": false,
+    "active": false 
+  },{
+    "name": "SOBRE",
+    "selected": false,
+    "active": false
+  },{
+    "name": "PALESTRANTES",
+    "selected": false,
+    "active": false
+  },{
+    "name": "PROGRAMAÇÃO",
+    "selected": false,
+    "active": false
+  },{
+    "name": "PATROCÍNIO",
+    "selected": false,
+    "active": false
+  },{
+    "name": "LOCAL",
+    "selected": false,
+    "active": false
+  },{
+    "name": "GUIA DE SOBREVIVÊNCIA",
+    "selected": false,
+    "active": false
+  },{
+    "name": "CONTATO",
+    "selected": false,
+    "active": false
+  }]
+}

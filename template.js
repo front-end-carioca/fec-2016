@@ -1,14 +1,17 @@
-<!doctype html>
+module.exports = `<!doctype html>
 <html>
   <head>
     <title>Sample App</title>
     <!-- vendor:css -->
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.theme.min.css" />
     <!-- endinject -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- endinject -->
   </head>
   <body>
-    <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <div class="svgstore">
       <!-- inject:svg -->
       <!-- endinject -->
     </div>
@@ -19,4 +22,4 @@
     <script src="<%= assets[chunk] %>"></script>
     <% } -%>
   </body>
-</html>
+</html>`;

@@ -1,0 +1,62 @@
+@include respond-to('sm') {
+
+  .navbar-default {
+    background: none;
+    border: none; 
+    box-shadow:none;
+    .navbar {
+      &-nav>li>a {
+        color:#FFF;
+        text-shadow: none;
+        &:hover, &:focus {
+          color:#666;
+          background-color:transparent;
+        }
+      }
+      &-header {
+        width: 100%;
+      }
+      &-toggle {
+        .icon-bar {
+          background-color:#FFF;
+        }
+      }
+      &-collapse {
+        background: rgba(0,0,0,.35);
+      }
+      &-brand {
+        text-indent: -9999px;
+        background: url(/img/fec-logo-icon.png) no-repeat center center;
+        background-size: cover;
+      }
+    }
+  }
+}
+@include respond-to('md') {
+  .navbar-default {
+    .navbar {
+      &-brand {
+        display: block;
+        float: none;
+        text-align: center;
+      }
+      &-collapse {
+        background: transparent;
+      }
+    }
+  }
+}
+@include respond-to('lg') {
+  .navbar-default {
+    .navbar {
+      &-header {
+        width: auto;
+      }
+      &-brand {
+        background-size: auto;
+        float: left;
+        text-align: left;
+      }
+    }
+  }
+}

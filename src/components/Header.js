@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import { cleanSpecialChars } from '../utils';
-import Scroll from 'react-scroll'; 
+import Scroll from 'react-scroll';
  
 var Events  = Scroll.Events;
 var Link  = Scroll.Link;
@@ -12,13 +12,9 @@ var scroll  = Scroll.animateScroll;
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      items: []
-    };
   }
 
   componentDidMount() {
-    this.setState(this.props);
  
     Events.scrollEvent.register('begin', function(to, element) {
       console.log("begin", arguments);
@@ -41,34 +37,34 @@ class Header extends Component {
   }
 
   render () {
-    const { items } = this.state;
+    const { items } = this.props;
     return (
       <header>
-        <Navbar bsStyle='' fixedTop={true}>
+        <Navbar fixedTop={true}>
           <Navbar.Header>
+            <Navbar.Toggle />
             <Navbar.Brand>
               <a className='logo' href='/'>
-                <label>FRONT-END CARIOCA</label>
-                <svg className='logo-svg'>
-                  <use xlinkHref='#fec_logo'></use>
-                </svg>
+                FRONT-END CARIOCA
               </a>
             </Navbar.Brand>
           </Navbar.Header>
-          <Nav>
-            {items.map((item, i) => {
-              const name = cleanSpecialChars(item.name);
-              return <NavItem 
-                key={i}
-                eventKey={i}
-                active={item.active}
-                componentClass={Link}
-                to={name} spy={true}
-                smooth={true} offset={50} duration={1000}
-                onClick={this._onScrollTo.bind(this, name)}
-                href={`#${name}`}>{item.name}</NavItem>
-            })}
-          </Nav>
+          <Navbar.Collapse>
+            <Nav>
+              {items.map((item, i) => {
+                const name = cleanSpecialChars(item.name, true, true);
+                return <NavItem 
+                  key={i}
+                  eventKey={i}
+                  active={item.active}
+                  componentClass={Link}
+                  to={name} spy={true}
+                  smooth={true} offset={0} duration={1000}
+                  onClick={this._onScrollTo.bind(this, name)}
+                  href={`#${name}`}>{item.name}</NavItem>
+              })}
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </header>
     );

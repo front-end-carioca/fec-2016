@@ -1,6 +1,6 @@
 export const cleanSpecialChars = (string, whitespace, lowercase) => {
-  if(!whitespace) { whitespace = true; }
-  if(!lowercase) { lowercase = true; }
+  if(!!whitespace) { whitespace = true; }
+  if(!!lowercase) { lowercase = true; }
 
   var new_text = string;
   new_text = new_text.replace(/[áàâãä]/gi, "a");

@@ -1,29 +1,8 @@
 var ejs = require('ejs');
 var path = require('path');
-var ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
+var ReactToHtmlPlugin = require('./reactToStringWebpack');
 var webpack = require('webpack');
-var template = `<!doctype html>
-<html>
-  <head>
-    <title>Sample App</title>
-    <!-- vendor:css -->
-    <!-- endinject -->
-    <!-- inject:css -->
-    <!-- endinject -->
-  </head>
-  <body>
-    <div style="height: 0; width: 0; position: absolute; visibility: hidden">
-      <!-- inject:svg -->
-      <!-- endinject -->
-    </div>
-    <div id="app">
-      <%- html %>
-    </div>
-    <% for (var chunk in assets) { -%>
-    <script src="<%= assets[chunk] %>"></script>
-    <% } -%>
-  </body>
-</html>`;
+var template = require('./template');
 
 var config = {
   devtool: 'source-map',
@@ -39,6 +18,7 @@ var config = {
       'process.env.NODE_ENV': '"development"'
     }),
     new ReactToHtmlPlugin('index.html', 'bundle.js', {
+      static: 'renderToStaticMarkup',
       template: function(data) {
         return ejs.render(template, data);
       }
