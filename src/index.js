@@ -1,15 +1,22 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import config from 'json!./fecSettings.json';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import AppContainer from './AppContainer';
+import store from './Store';
+
+
+const ProviderApp = () => <Provider store={store}>
+    <AppContainer />
+  </Provider>;
 
 if (typeof document !== 'undefined') {
-  ReactDOM.render(<App {...config} />, document.getElementById('app'));
+  render( ProviderApp(),
+    document.getElementById('app')
+  );
 }
 
 module.exports = () => {
-  const AppFactory = React.createFactory(App);
-
-  return AppFactory(config);
+  const AppFactory = React.createFactory(ProviderApp);
+  return AppFactory();
 };

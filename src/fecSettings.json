@@ -1,35 +1,27 @@
 {
   "items": [{
     "name": "HOME",
-    "selected": false,
-    "active": false 
+    "selected": false
   },{
     "name": "SOBRE",
-    "selected": false,
-    "active": false
+    "selected": false
   },{
     "name": "PALESTRANTES",
-    "selected": false,
-    "active": false
+    "selected": false
   },{
     "name": "PROGRAMAÇÃO",
-    "selected": false,
-    "active": false
+    "selected": false
   },{
     "name": "PATROCÍNIO",
-    "selected": false,
-    "active": false
+    "selected": false
   },{
     "name": "LOCAL",
-    "selected": false,
-    "active": false
+    "selected": false
   },{
     "name": "GUIA DE SOBREVIVÊNCIA",
-    "selected": false,
-    "active": false
+    "selected": false
   },{
     "name": "CONTATO",
-    "selected": false,
-    "active": false
+    "selected": false
   }]
 }

@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import { cleanSpecialChars } from '../utils';
 import Scroll from 'react-scroll';
- 
+
 var Events  = Scroll.Events;
 var Link  = Scroll.Link;
 var scroll  = Scroll.animateScroll;
@@ -15,15 +15,15 @@ class Header extends Component {
   }
 
   componentDidMount() {
- 
+
     Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", arguments);
+      // console.log("begin", arguments);
     });
- 
+
     Events.scrollEvent.register('end', function(to, element) {
-      console.log("end", arguments);
+      // console.log("end", arguments);
     });
- 
+
   }
 
   componentWillUnmount() {
@@ -51,9 +51,9 @@ class Header extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              {items.map((item, i) => {
+              {(items ? items.map((item, i) => {
                 const name = cleanSpecialChars(item.name, true, true);
-                return <NavItem 
+                return <NavItem
                   key={i}
                   eventKey={i}
                   active={item.active}
@@ -62,7 +62,7 @@ class Header extends Component {
                   smooth={true} offset={0} duration={1000}
                   onClick={this._onScrollTo.bind(this, name)}
                   href={`#${name}`}>{item.name}</NavItem>
-              })}
+              }) : '')}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
