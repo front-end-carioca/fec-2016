@@ -35,11 +35,13 @@ class Header extends Component {
     const sTop = document.getElementById(name).offsetTop;
     scroll.scrollTo(sTop);
   }
-
   render () {
     const { items } = this.props;
+    const itemSelected = items.filter((i)=> i.selected);
+    const classHeader = itemSelected.length === 1 ? cleanSpecialChars(itemSelected[0].name, true, true) : '';
+
     return (
-      <header>
+      <header className={classHeader}>
         <Navbar fixedTop={true}>
           <Navbar.Header>
             <Navbar.Toggle />

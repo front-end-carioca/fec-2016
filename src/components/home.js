@@ -14,10 +14,10 @@ class Home extends Component {
     const {key, name, onActiveSection} = this.props;
     return (
       <section key={key} id={name}>
+        <Waypoint onPositionChange={onActiveSection} />
         <div style={styles}>
           <img src="" />
         </div>
-        <Waypoint onPositionChange={onActiveSection} />
       </section>
     );
   }

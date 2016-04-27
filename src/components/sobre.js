@@ -5,17 +5,14 @@ class Sobre extends Component {
   constructor(props){
     super(props);
   }
-  _onActiveSection(a,b,c) {
-    console.log('_onActiveSection',a,b,c);
-  }
 
   render() {
     const {key, name, onActiveSection} = this.props;
     return (
       <section key={key} id={name}>
+        <Waypoint onPositionChange={onActiveSection} />
         <div style={{height: '700px', background: `#F0F`}}>
         </div>
-        <Waypoint onPositionChange={this._onActiveSection} />
       </section>
     );
   }

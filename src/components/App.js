@@ -17,11 +17,11 @@ class App extends Component {
     return (
       <div>
         <Header {...props} />
-        {(props.item ? props.items.map((section, i)=>{
+        {props.items.map((section, i)=>{
           const name = cleanSpecialChars(section.name, true, true);
           const Section = this._getSection(name);
           return <Section key={i} name={name} onActiveSection={props.onSelectSection.bind(this, name)}/>;
-        }) : '')}
+        })}
       </div>
     );
   }

@@ -6,14 +6,14 @@ import App from './components/App';
 
 
 const mapStateToProps = (state) => {
-  return { items: state.items };
+  return { items: state.sections.items };
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  console.log(ownProps);
+  console.log('ownProps', ownProps);
   return {
-    onSelectSection: () => {
-      dispatch(selectSection(ownProps.name))
+    onSelectSection: (name,event) => {
+      dispatch(selectSection(name))
     }
   }
 }
