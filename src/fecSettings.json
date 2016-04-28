@@ -1,27 +1,36 @@
 {
+  "sectionSelected": "",
   "items": [{
-    "name": "HOME",
+    "name": "home",
+    "label": "HOME",
     "selected": false
   },{
-    "name": "SOBRE",
+    "name": "sobre",
+    "label": "SOBRE",
     "selected": false
   },{
-    "name": "PALESTRANTES",
+    "name": "palestrantes",
+    "label": "PALESTRANTES",
     "selected": false
   },{
-    "name": "PROGRAMAÇÃO",
+    "name": "programacao",
+    "label": "PROGRAMAÇÃO",
     "selected": false
   },{
-    "name": "PATROCÍNIO",
+    "name": "patrocinio",
+    "label": "PATROCÍNIO",
     "selected": false
   },{
-    "name": "LOCAL",
+    "name": "local",
+    "label": "LOCAL",
     "selected": false
   },{
-    "name": "GUIA DE SOBREVIVÊNCIA",
+    "name": "guia-de-sobrevivencia",
+    "label": "GUIA DE SOBREVIVÊNCIA",
     "selected": false
   },{
-    "name": "CONTATO",
+    "name": "contato",
+    "label": "CONTATO",
     "selected": false
   }]
 }

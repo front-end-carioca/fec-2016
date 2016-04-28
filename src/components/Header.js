@@ -17,11 +17,11 @@ class Header extends Component {
   componentDidMount() {
 
     Events.scrollEvent.register('begin', function(to, element) {
-      // console.log("begin", arguments);
+      console.log("begin", arguments);
     });
 
     Events.scrollEvent.register('end', function(to, element) {
-      // console.log("end", arguments);
+      console.log("end", arguments);
     });
 
   }
@@ -47,23 +47,23 @@ class Header extends Component {
             <Navbar.Toggle />
             <Navbar.Brand>
               <a className='logo' href='/'>
-                FRONT-END CARIOCA
+                <label>FRONT-END CARIOCA</label>
+                <img className="icon" src="/img/fec-logo-icon-2x.png" />
               </a>
             </Navbar.Brand>
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
               {(items ? items.map((item, i) => {
-                const name = cleanSpecialChars(item.name, true, true);
                 return <NavItem
                   key={i}
                   eventKey={i}
-                  active={item.active}
+                  active={item.selected}
                   componentClass={Link}
-                  to={name} spy={true}
+                  to={item.name} spy={true}
                   smooth={true} offset={0} duration={1000}
-                  onClick={this._onScrollTo.bind(this, name)}
-                  href={`#${name}`}>{item.name}</NavItem>
+                  onClick={this._onScrollTo.bind(this, item.name)}
+                  href={`#${item.name}`}>{item.label}</NavItem>
               }) : '')}
             </Nav>
           </Navbar.Collapse>

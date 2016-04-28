@@ -6,7 +6,10 @@ import App from './components/App';
 
 
 const mapStateToProps = (state) => {
-  return { items: state.sections.items };
+  return {
+    sectionSelected: 'home',
+    items: state.sections.items
+  };
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {

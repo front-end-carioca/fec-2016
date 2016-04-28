@@ -12,6 +12,9 @@ class App extends Component {
   _getSection(name) {
     return require('./'+name).default;
   }
+  componentWillMount(){
+    this.props.onSelectSection('home');
+  }
   render() {
     const props = this.props;
     return (
