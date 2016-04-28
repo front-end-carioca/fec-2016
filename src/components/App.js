@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { cleanSpecialChars } from '../utils';
+import Waypoint from 'react-waypoint';
 import Header from './Header';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
@@ -13,7 +14,13 @@ class App extends Component {
     return require('./'+name).default;
   }
   componentWillMount(){
-    this.props.onSelectSection('home');
+    if(typeof window !== 'undefined'){
+      setTimeout(() => {
+        window.scrollTo(0,1);
+        this.props.onUnselectAll();
+      }, 500);
+    }
+    this.props.onSelect('home');
   }
   render() {
     const props = this.props;
@@ -21,9 +28,10 @@ class App extends Component {
       <div>
         <Header {...props} />
         {props.items.map((section, i)=>{
-          const name = cleanSpecialChars(section.name, true, true);
-          const Section = this._getSection(name);
-          return <Section key={i} name={name} onActiveSection={props.onSelectSection.bind(this, name)}/>;
+          const Section = this._getSection(section.name);
+          return <Section key={i} name={section.name}>
+            <Waypoint onPositionChange={props.onSelect.bind(this, section.name)} />
+          </Section>;
         })}
       </div>
     );

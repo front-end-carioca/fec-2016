@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Waypoint from 'react-waypoint';
 
 class Local extends Component {
   constructor(props){
@@ -7,12 +6,12 @@ class Local extends Component {
   }
 
   render() {
-    const {key, name, onActiveSection} = this.props;
+    const {key, name, children} = this.props;
     return (
       <section key={key} id={name}>
-        <Waypoint onPositionChange={onActiveSection} />
         <div style={{height: '700px', background: `#F0F`}}>
         </div>
+        {children}
       </section>
     );
   }

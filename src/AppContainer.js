@@ -15,8 +15,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   console.log('ownProps', ownProps);
   return {
-    onSelectSection: (name,event) => {
+    onSelect: (name,event) => {
       dispatch(selectSection(name))
+    },
+
+    onUnselectAll: (name,event) => {
+      dispatch(unselectAllSections())
     }
   }
 }

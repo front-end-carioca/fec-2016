@@ -17,3 +17,5 @@ $break-xl: "min-width: 80em";
     @media only screen and ($break-xl) { @content; }
   }
 }
+
+@import './vendor/flexbox/_flexbox';

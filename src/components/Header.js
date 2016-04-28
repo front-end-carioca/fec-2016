@@ -47,8 +47,8 @@ class Header extends Component {
             <Navbar.Toggle />
             <Navbar.Brand>
               <a className='logo' href='/'>
-                <label>FRONT-END CARIOCA</label>
                 <img className="icon" src="/img/fec-logo-icon-2x.png" />
+                <label>FRONT-END CARIOCA</label>
               </a>
             </Navbar.Brand>
           </Navbar.Header>

@@ -1,16 +1,17 @@
 @include respond-to('sm') {
-
   .navbar-default {
     background: none;
     border: none;
     box-shadow:none;
     .navbar {
-      &-nav>li>a {
-        color:#FFF;
-        text-shadow: none;
-        &:hover, &:focus {
-          color:#666;
-          background-color:transparent;
+      &-nav{
+        >li>a {
+          color:#FFF;
+          text-shadow: none;
+          &:hover, &:focus {
+            color:#666;
+            background-color:transparent;
+          }
         }
       }
       &-header {
@@ -19,6 +20,7 @@
       &-toggle {
         margin-right: 0;
         margin-top: 15px;
+        background: transparent;
         .icon-bar {
           background-color:#FFF;
         }
@@ -37,10 +39,10 @@
           font-weight: 300;
           line-height: 1.25em;
           text-shadow: none;
+          margin-left: 5px;
         }
         .icon {
           display: inline-block;
-          margin-right: 5px;
           width: 50px;
         }
       }
@@ -50,14 +52,21 @@
 @include respond-to('md') {
   .navbar-default {
     .navbar {
+      &-nav {
+        align-items: center;
+        @include flexbox();
+        height: 100px;
+      }
       &-brand {
         display: block;
         float: none;
+        padding: 10px 0;
         text-align: center;
         .icon {
           display: inline-block;
-          width: 90px;
+          width: 80px;
         }
+        label {display:none;}
       }
       &-collapse {
         background: transparent;

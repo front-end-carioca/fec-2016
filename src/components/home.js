@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Waypoint from 'react-waypoint';
 
 const styles = {
   height: '700px'
@@ -11,13 +10,13 @@ class Home extends Component {
   }
 
   render() {
-    const {key, name, onActiveSection} = this.props;
+    const {key, name, children} = this.props;
     return (
       <section key={key} id={name}>
-        <Waypoint onPositionChange={onActiveSection} />
         <div style={styles}>
           <img src="" />
         </div>
+        {children}
       </section>
     );
   }
