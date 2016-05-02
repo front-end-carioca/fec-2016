@@ -9,7 +9,7 @@ var Events  = Scroll.Events;
 var Link  = Scroll.Link;
 var scroll  = Scroll.animateScroll;
 
-class Header extends Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
   }
@@ -41,7 +41,7 @@ class Header extends Component {
     const classHeader = itemSelected.length === 1 ? cleanSpecialChars(itemSelected[0].name, true, true) : '';
 
     return (
-      <header className={classHeader}>
+      <div className={classHeader}>
         <Navbar fixedTop={true}>
           <Navbar.Header>
             <Navbar.Toggle />
@@ -68,9 +68,9 @@ class Header extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-      </header>
+      </div>
     );
   }
 };
 
-export default Header;
+export default Menu;

@@ -8,7 +8,8 @@ import App from './components/App';
 const mapStateToProps = (state) => {
   return {
     sectionSelected: 'home',
-    items: state.sections.items
+    items: state.sections.items,
+    palestrantes: state.sections.palestrantes
   };
 }
 

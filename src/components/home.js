@@ -12,12 +12,12 @@ class Home extends Component {
   render() {
     const {key, name, children} = this.props;
     return (
-      <section key={key} id={name}>
+      <header key={key} id={name}>
         <div style={styles}>
-          <img src="" />
+          <img src="/img/fec_logo.png" />
         </div>
         {children}
-      </section>
+      </header>
     );
   }
 };

@@ -32,5 +32,9 @@
     "name": "contato",
     "label": "CONTATO",
     "selected": false
+  }],
+  "palestrantes": [{
+    "name": "Pedro Polisenso",
+    "description": "Sou dev transante"
   }]
 }

@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { cleanSpecialChars } from '../utils';
 import Waypoint from 'react-waypoint';
-import Header from './Header';
-import Grid from 'react-bootstrap/lib/Grid';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
+import Menu from './Menu';
 
 class App extends Component {
   constructor(props) {
@@ -24,12 +21,13 @@ class App extends Component {
   }
   render() {
     const props = this.props;
+    console.log('App >>', props);
     return (
       <div>
-        <Header {...props} />
+        <Menu {...props} />
         {props.items.map((section, i)=>{
           const Section = this._getSection(section.name);
-          return <Section key={i} name={section.name}>
+          return <Section key={i} name={section.name} store={props}>
             <Waypoint onPositionChange={props.onSelect.bind(this, section.name)} />
           </Section>;
         })}
