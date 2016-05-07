@@ -1,5 +1,4 @@
-export const selectSection = (sectionName, a) => {
-  console.log('selectSection', sectionName, a);
+export const selectSection = (sectionName) => {
   return {
     type: 'SELECT_SECTION',
     sectionName

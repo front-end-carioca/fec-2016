@@ -3,6 +3,6 @@ import sections from './sections'
 
 const FecApp = combineReducers({
   sections
-})
+});
 
 export default FecApp

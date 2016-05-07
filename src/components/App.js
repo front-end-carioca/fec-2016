@@ -8,7 +8,7 @@ class App extends Component {
     super(props);
   }
   _getSection(name) {
-    return require('./'+name).default;
+    return require('./sections/'+name).default;
   }
   componentWillMount(){
     if(typeof window !== 'undefined'){
@@ -16,20 +16,16 @@ class App extends Component {
         window.scrollTo(0,1);
         this.props.onUnselectAll();
       }, 500);
-    }
-    this.props.onSelect('home');
+    };
   }
   render() {
     const props = this.props;
-    console.log('App >>', props);
     return (
       <div>
         <Menu {...props} />
         {props.items.map((section, i)=>{
           const Section = this._getSection(section.name);
-          return <Section key={i} name={section.name} store={props}>
-            <Waypoint onPositionChange={props.onSelect.bind(this, section.name)} />
-          </Section>;
+          return <Section key={i} name={section.name} store={props} />;
         })}
       </div>
     );

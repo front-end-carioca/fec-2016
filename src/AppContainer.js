@@ -7,14 +7,13 @@ import App from './components/App';
 
 const mapStateToProps = (state) => {
   return {
-    sectionSelected: 'home',
+    sectionSelected: state.sections.sectionSelected,
     items: state.sections.items,
     palestrantes: state.sections.palestrantes
   };
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  console.log('ownProps', ownProps);
   return {
     onSelect: (name,event) => {
       dispatch(selectSection(name))

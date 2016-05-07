@@ -10,13 +10,15 @@ class Palestrantes extends Component {
 
   render() {
     const {key, name, store, children} = this.props;
-    console.log('Palestrantes >>', this.props);
     return (
       <section key={key} id={name}>
         <div style={{height: '700px', background: `#00F`}}>
           <Grid>
             <Row>
-            {store.palestrantes.map(p => <Col sm={1} md={3}><h1>{p.name}</h1></Col>)}
+            {store.palestrantes.map((p, i) => <Col key={i} sm={1} md={3}>
+                <h1>{p.name}</h1>
+              </Col>
+            )}
             </Row>
           </Grid>
         </div>

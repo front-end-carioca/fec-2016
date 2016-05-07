@@ -23,6 +23,7 @@
     "eval": "^0.1.1",
     "gulp": "^3.9.1",
     "gulp-inject": "^4.0.0",
+    "gulp-load-tasks": "^0.8.4",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-svgmin": "^1.2.2",
@@ -40,8 +41,11 @@
     "react-waypoint": "^2.0.1",
     "run-sequence": "^1.1.5",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1"
+    "webpack-dev-server": "^1.14.1"
   },
   "author": "FEC-2016",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.8.0"
+  }
 }

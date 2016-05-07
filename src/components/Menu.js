@@ -16,12 +16,13 @@ class Menu extends Component {
 
   componentDidMount() {
 
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", arguments);
+    Events.scrollEvent.register('begin', (to, element) => {
+      console.log("begin", arguments) ;
     });
 
-    Events.scrollEvent.register('end', function(to, element) {
+    Events.scrollEvent.register('end', (to, element) => {
       console.log("end", arguments);
+      this.props.onSelect(to);
     });
 
   }
@@ -36,12 +37,10 @@ class Menu extends Component {
     scroll.scrollTo(sTop);
   }
   render () {
-    const { items } = this.props;
-    const itemSelected = items.filter((i)=> i.selected);
-    const classHeader = itemSelected.length === 1 ? cleanSpecialChars(itemSelected[0].name, true, true) : '';
+    const { items, sectionSelected } = this.props;
 
     return (
-      <div className={classHeader}>
+      <div className={sectionSelected}>
         <Navbar fixedTop={true}>
           <Navbar.Header>
             <Navbar.Toggle />

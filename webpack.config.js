@@ -6,9 +6,10 @@ var template = require('./template');
 
 var config = {
   devtool: 'source-map',
-  entry: './src/index',
+  entry: ['./src/index'],
   output: {
     path: path.join(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'bundle.js',
     library: 'AppFEC',
     libraryTarget: 'umd'
