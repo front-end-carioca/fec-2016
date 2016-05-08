@@ -1,6 +1,6 @@
 @include respond-to('sm') {
   .navbar-default {
-    background: none;
+    background: #363C44;
     border: none;
     box-shadow:none;
     .navbar {
@@ -16,9 +16,10 @@
       }
       &-header {
         width: 100%;
+        margin: 0;
       }
       &-toggle {
-        margin-right: 0;
+        margin-right: 15px;
         margin-top: 15px;
         background: transparent;
         .icon-bar {
@@ -29,21 +30,12 @@
         background: rgba(0,0,0,.35);
       }
       &-brand {
-        background-size: cover;
+        align-items: center;
+        display: flex;
         height: auto;
         padding: 10px 15px;
-        label {
-          color: #FFF;
-          display: inline-block;
-          font-size: 0.8em;
-          font-weight: 300;
-          line-height: 1.25em;
-          text-shadow: none;
-          margin-left: 5px;
-        }
-        .icon {
-          display: inline-block;
-          width: 50px;
+        > img {
+          max-width: 230px;
         }
       }
     }
@@ -55,18 +47,16 @@
       &-nav {
         align-items: center;
         @include flexbox();
-        height: 100px;
+        height: 85px;
       }
       &-brand {
         display: block;
         float: none;
         padding: 10px 0;
         text-align: center;
-        .icon {
-          display: inline-block;
-          width: 80px;
+        > img {
+          max-width: 300px;
         }
-        label {display:none;}
       }
       &-collapse {
         background: transparent;

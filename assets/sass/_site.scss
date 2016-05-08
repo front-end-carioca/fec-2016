@@ -10,3 +10,18 @@ body {
   visibility: hidden;
   width: 0;
 }
+
+@include respond-to('sm') {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@include respond-to('md') {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+}

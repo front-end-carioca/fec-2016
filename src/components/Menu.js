@@ -40,34 +40,31 @@ class Menu extends Component {
     const { items, sectionSelected } = this.props;
 
     return (
-      <div className={sectionSelected}>
-        <Navbar fixedTop={true}>
-          <Navbar.Header>
-            <Navbar.Toggle />
-            <Navbar.Brand>
-              <a className='logo' href='/'>
-                <img className="icon" src="/img/fec-logo-icon-2x.png" />
-                <label>FRONT-END CARIOCA</label>
-              </a>
-            </Navbar.Brand>
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav>
-              {(items ? items.map((item, i) => {
-                return <NavItem
-                  key={i}
-                  eventKey={i}
-                  active={item.selected}
-                  componentClass={Link}
-                  to={item.name} spy={true}
-                  smooth={true} offset={0} duration={1000}
-                  onClick={this._onScrollTo.bind(this, item.name)}
-                  href={`#${item.name}`}>{item.label}</NavItem>
-              }) : '')}
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
+      <Navbar className={`${sectionSelected}`} fixedTop={true}>
+        <Navbar.Header>
+          <Navbar.Toggle />
+          <Navbar.Brand>
+            <a className='logo' href='/'>
+              <img src="/img/navbrand.png" />
+            </a>
+          </Navbar.Brand>
+        </Navbar.Header>
+        <Navbar.Collapse className="pull-right">
+          <Nav>
+            {(items ? items.map((item, i) => {
+              return <NavItem
+                key={i}
+                eventKey={i}
+                active={item.selected}
+                componentClass={Link}
+                to={item.name} spy={true}
+                smooth={true} offset={0} duration={1000}
+                onClick={this._onScrollTo.bind(this, item.name)}
+                href={`#${item.name}`}>{item.label}</NavItem>
+            }) : '')}
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 };

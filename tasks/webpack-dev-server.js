@@ -14,13 +14,13 @@ module.exports = (callback) => {
     }
   }
   if(process.env.NODE_ENV !== 'production'){
-    myConfig.cache = true;
-    myConfig.debug = true;
-    myConfig.devtool = "eval";
-    myConfig.entry.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
-    myConfig.plugins.unshift(new webpack.HotModuleReplacementPlugin());
+    // myConfig.cache = true;
+    // myConfig.debug = true;
+    // myConfig.devtool = "eval";
+    // myConfig.entry.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
+    // myConfig.plugins.unshift(new webpack.HotModuleReplacementPlugin());
 
-    webpackDevServerConfig.hot = true;
+    // webpackDevServerConfig.hot = true;
   }
 
   // Start a webpack-dev-server
