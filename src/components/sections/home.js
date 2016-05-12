@@ -29,7 +29,6 @@ class Home extends Component {
         <h3 className="subtitle">14 DE OUTUBRO 2016</h3>
         <ButtonToolbar>
           <Button>INSCREVA-SE</Button>
-          <Button>PATROCINE</Button>
         </ButtonToolbar>
       </header>
     );

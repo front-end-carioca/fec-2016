@@ -5,9 +5,9 @@ import { Provider } from 'react-redux';
 import AppContainer from './AppContainer';
 import store from './Store';
 
-if(typeof window !== 'undefined'){
-  window.store = store;
-}
+// if(typeof window !== 'undefined'){
+//   window.store = store;
+// }
 
 
 const ProviderApp = () => <Provider store={store}>
