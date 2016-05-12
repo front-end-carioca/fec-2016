@@ -6,5 +6,6 @@ module.exports = (callback) => runSequence(
   'vendor',
   'webpack',
   'svgstore',
+  'watch',
   callback
 );

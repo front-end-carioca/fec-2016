@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 300;
+  display: none;
 }
 
 .svgstore {
@@ -9,6 +10,11 @@ body {
   position: absolute;
   visibility: hidden;
   width: 0;
+}
+
+.btn-default {
+  background: #FFCF27;
+  border-color: #FFCF27;
 }
 
 @include respond-to('sm') {

@@ -15,8 +15,13 @@ var config = {
     libraryTarget: 'umd'
   },
   plugins: [
-    new webpack.NoErrorsPlugin({
-      'process.env.NODE_ENV': '"development"'
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: {
+        except: ['exports', 'require']
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"production"'
     }),
     new ReactToHtmlPlugin('index.html', 'bundle.js', {
       static: 'renderToStaticMarkup',

@@ -1,1 +1,1 @@
-module.exports = [['serve']];
+module.exports = [['build']];

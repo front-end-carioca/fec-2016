@@ -1,11 +1,18 @@
 //'watch'
 import gulp from 'gulp';
-import runSenquence from 'run-sequence';
+// import server from 'gulp-express';
+import gls from 'gulp-live-server';
 
 module.exports = () => {
-  gulp.watch(['src/**/*'], ['webpack-watch']);
-  gulp.watch('assets/img/**/*', ['img']);
-  gulp.watch('assets/vendor/**/*', ['vendor']);
-  gulp.watch('assets/svg/**/*', ['svgstore']);
-  gulp.watch('assets/sass/**/*.scss', ['sass']);
+  const server = gls.new('server/app.babel.js', {}, true);
+  server.start();
+
+  const notify = (event) => server.notify.apply(server, [event.path]);
+
+  gulp.watch(['./template.js']).on('change', notify);
+  gulp.watch(['assets/sass/**/*.scss'], ['sass']).on('change', notify);
+  gulp.watch(['assets/svg/**/*.scss'], ['svgstore']).on('change', notify);
+
+  gulp.watch(['assets/img/**/*'], ['img']).on('change', notify);
+  gulp.watch(['server/**/*.js'], server.start.bind(server));
 };

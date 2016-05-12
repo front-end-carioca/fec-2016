@@ -1,12 +1,14 @@
 @include respond-to('sm') {
   .navbar-default {
     background: #363C44;
+    // background: RED;
     border: none;
     box-shadow:none;
     .navbar {
       &-nav{
         >li>a {
           color:#FFF;
+          padding: 15px 10px;
           text-shadow: none;
           &:hover, &:focus {
             color:#666;
