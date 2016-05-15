@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node server/app",
-    "build": "webpack",
+    "prestart": "npm run build",
+    "build": "gulp build",
     "lint": "eslint src"
   },
   "devDependencies": {
@@ -21,6 +22,7 @@
     "eslint": "^2.9.0",
     "eslint-plugin-react": "^5.0.1",
     "eval": "^0.1.1",
+    "glob": "^7.0.3",
     "gulp": "^3.9.1",
     "gulp-express": "^0.3.5",
     "gulp-hot-reload": "^1.2.4",

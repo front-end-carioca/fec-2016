@@ -36,6 +36,10 @@ var config = {
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
     }]
+  },
+  externals: {
+    window: 'window',
+    document: 'document'
   }
 };
 

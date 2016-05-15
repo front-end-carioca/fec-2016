@@ -1,4 +1,4 @@
-import initialState from 'json!../fecSettings.json';
+import initialState from '../fecSettings.json';
 import * as utils from '../utils';
 
 const sections = (state = initialState, action) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { selectSection, unselectAllSections } from './actions';
-import fecSettings from 'json!./fecSettings.json';
+import fecSettings from './fecSettings.json';
 import App from './components/App';
 
 

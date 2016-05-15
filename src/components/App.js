@@ -7,7 +7,8 @@ class App extends Component {
   constructor(props) {
     super(props);
   }
-  _getSection(name) {
+
+  getSection(name) {
     return require('./sections/'+name).default;
   }
   componentWillMount(){
@@ -24,7 +25,7 @@ class App extends Component {
       <div>
         <Menu {...props} />
         {props.items.map((section, i)=>{
-          const Section = this._getSection(section.name);
+          const Section = this.getSection(section.name);
           return <Section key={i} name={section.name} store={props} />;
         })}
       </div>

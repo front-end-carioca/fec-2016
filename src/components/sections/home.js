@@ -13,11 +13,13 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    this.setState({
-      styles: {
-        height: window.outerHeight
-      }
-    });
+    if (typeof window !== 'undefined') {
+      this.setState({
+        styles: {
+          height: window.outerHeight
+        }
+      });
+    }
   }
 
   render() {
@@ -29,6 +31,7 @@ class Home extends Component {
         <h3 className="subtitle">14 DE OUTUBRO 2016</h3>
         <ButtonToolbar>
           <Button>INSCREVA-SE</Button>
+          <Button>P</Button>
         </ButtonToolbar>
       </header>
     );

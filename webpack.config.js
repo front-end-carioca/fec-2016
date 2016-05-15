@@ -6,29 +6,27 @@ var template = require('./template');
 
 var config = {
   devtool: 'source-map',
-  entry: ['./src/index'],
+  entry: [
+    './src/index'
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'bundle.js',
-    library: 'AppFEC',
-    libraryTarget: 'umd'
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.NoErrorsPlugin({
       'process.env.NODE_ENV': '"development"'
-    }),
-    new ReactToHtmlPlugin('index.html', 'bundle.js', {
-      static: 'renderToStaticMarkup',
-      template: function(data) {
-        return ejs.render(template, data);
-      }
     })
   ],
   module: {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
+      include: path.join(__dirname, 'src')
+    },{
+      test: /\.json$/,
+      loaders: ['json'],
       include: path.join(__dirname, 'src')
     }]
   },

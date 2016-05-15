@@ -3,7 +3,7 @@ import gulp from 'gulp';
 import server from 'gulp-express';
 
 module.exports = () => {
-  server.run(['--harmony','server/app.babel.js'])
+  server.run(['server/app.babel.js'])
 
   const notify = (file) => {
     server.notify(file);

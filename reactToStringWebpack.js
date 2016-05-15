@@ -1,6 +1,6 @@
 var React = require('react');
+var path = require('path');
 var ReactDOMServer = require('react-dom/server');
-var evaluate = require('eval');
 
 // src can be either a filename or a chunk name
 function ReactToHtmlWebpackPlugin(destPath, src, options) {
@@ -11,7 +11,6 @@ function ReactToHtmlWebpackPlugin(destPath, src, options) {
 
 ReactToHtmlWebpackPlugin.prototype.apply = function(compiler) {
   compiler.plugin('emit', function(compiler, done) {
-
     var webpackStatsJson = compiler.getStats().toJson();
 
     try {
@@ -20,14 +19,14 @@ ReactToHtmlWebpackPlugin.prototype.apply = function(compiler) {
         throw new Error('Output file not found: "' + this.src + '"');
       }
 
-      var source = asset.source();
-      var Component = evaluate(source, /* filename: */ undefined, /* scope: */ undefined, /* includeGlobals: */ true);
+      console.log(`${compiler.outputOptions.path}/${this.src}`);
+      var Component = require(`${compiler.outputOptions.path}/${this.src}`)
       var renderMethod = this.options.static ? 'renderToStaticMarkup' : 'renderToString';
       var html = ReactDOMServer[renderMethod](React.createElement(Component));
 
       var template = this.options.template;
 
-      if (template != null && typeof template !== 'function') {
+      if (template !== null && typeof template !== 'function') {
         throw new Error('Template must be a function');
       }
 
