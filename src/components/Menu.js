@@ -58,7 +58,7 @@ class Menu extends Component {
                 active={item.selected}
                 componentClass={Link}
                 to={item.name} spy={true}
-                smooth={true} offset={0} duration={1000}
+                smooth={true} offset={-89} duration={1000}
                 onClick={this._onScrollTo.bind(this, item.name)}
                 href={`#${item.name}`}>{item.label}</NavItem>
             }) : '')}

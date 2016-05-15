@@ -6,9 +6,9 @@ class GuiaDeSobrevivencia extends Component {
   }
 
   render() {
-    const {key, name, children} = this.props;
+    const {name, children} = this.props;
     return (
-      <section key={key} id={name}>
+      <section id={name}>
         <div style={{height: '700px', background: `#F0F`}}>
         </div>
         {children}

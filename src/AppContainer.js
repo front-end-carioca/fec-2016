@@ -9,6 +9,7 @@ const mapStateToProps = (state) => {
   return {
     sectionSelected: state.sections.sectionSelected,
     items: state.sections.items,
+    sections: state.sections.sections,
     palestrantes: state.sections.palestrantes
   };
 }

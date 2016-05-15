@@ -1,10 +1,9 @@
-$break-sm: "min-width: 35.5em";
 $break-md: "min-width: 48em";
 $break-lg: "min-width: 64em";
 $break-xl: "min-width: 80em";
 
 @mixin respond-to($media) {
-  @if $media == 'sm' {
+  @if $media == 'basic' {
     @content;
   }
   @else if $media == 'md' {

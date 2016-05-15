@@ -5,8 +5,7 @@ module.exports = (callback) => runSequence(
   'sass',
   'vendor',
   'webpack',
-  'svgstore',
   'react-to-html',
-  'server',
+  'svgstore',
   callback
 );

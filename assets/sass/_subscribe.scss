@@ -1,0 +1,17 @@
+.subscribe {
+  position: relative;
+  @include flexbox;
+  align-items: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    
+
+    background-color: #F26544;
+    -webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    transform: skew(30deg);
+  }
+}

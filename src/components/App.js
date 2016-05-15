@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { cleanSpecialChars } from '../utils';
-import Waypoint from 'react-waypoint';
 import Menu from './Menu';
 
 class App extends Component {
@@ -21,12 +20,13 @@ class App extends Component {
   }
   render() {
     const props = this.props;
+    const steps = [1];
     return (
       <div>
         <Menu {...props} />
-        {props.items.map((section, i)=>{
-          const Section = this.getSection(section.name);
-          return <Section key={i} name={section.name} store={props} />;
+        {props.sections.map( (section, i) => {
+          const Section = this.getSection(section);
+          return <Section key={i} name={section} store={props} />;
         })}
       </div>
     );

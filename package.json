@@ -4,9 +4,8 @@
   "description": "Site da FEC-2016",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server/app",
-    "prestart": "npm run build",
-    "build": "gulp build",
+    "start": "gulp start",
+    "build": "gulp dist",
     "lint": "eslint src"
   },
   "devDependencies": {
@@ -28,6 +27,7 @@
     "gulp-hot-reload": "^1.2.4",
     "gulp-inject": "^4.0.0",
     "gulp-live-server": "0.0.29",
+    "gulp-livereload": "^3.8.1",
     "gulp-load-tasks": "^0.8.4",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^2.0.0-alpha",

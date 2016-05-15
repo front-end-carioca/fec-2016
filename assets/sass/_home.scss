@@ -1,10 +1,11 @@
 #home {
   background: url(/img/fec_background.png) no-repeat center center;
   background-size: cover;
-  padding: 225px 0;
+  padding: 195px 0;
   color: #fff;
   text-align: center;
   font-family: Roboto;
+  max-height: 600px;
 
   .title {
     font-weight: 300;
@@ -12,11 +13,23 @@
     display: block;
     line-height: 1.3;
     margin: 0 auto;
-    text-indent: -40%;
-    padding-left: 160px;
+    // text-indent: -40%;
+    // padding-left: 160px;
   }
   .subtitle {
     font-weight: 400;
     font-size: 34px;
+  }
+
+  .wrap-buttons {
+    margin-top: 55px;
+
+    .btn {
+      font-size: 1.2em;
+      margin-left: 10px;
+      width: 200px;
+      height: 40px;
+      // line-height: 1;
+    }
   }
 }

@@ -9,9 +9,9 @@ class Palestrantes extends Component {
   }
 
   render() {
-    const {key, name, store, children} = this.props;
+    const {name, store, children} = this.props;
     return (
-      <section key={key} id={name}>
+      <section id={name}>
         <div style={{height: '700px', background: `#00F`}}>
           <Grid>
             <Row>

@@ -2,37 +2,30 @@
   "sectionSelected": "home",
   "items": [{
     "name": "home",
-    "label": "HOME",
-    "selected": false
+    "label": "HOME"
   },{
     "name": "sobre",
-    "label": "SOBRE",
-    "selected": false
+    "label": "SOBRE"
   },{
     "name": "palestrantes",
-    "label": "PALESTRANTES",
-    "selected": false
+    "label": "PALESTRANTES"
   },{
     "name": "programacao",
-    "label": "PROGRAMAÇÃO",
-    "selected": false
+    "label": "PROGRAMAÇÃO"
   },{
     "name": "patrocinio",
-    "label": "PATROCÍNIO",
-    "selected": false
+    "label": "PATROCÍNIO"
   },{
     "name": "local",
-    "label": "LOCAL",
-    "selected": false
+    "label": "LOCAL"
   },{
     "name": "guia-de-sobrevivencia",
-    "label": "GUIA DE SOBREVIVÊNCIA",
-    "selected": false
+    "label": "GUIA DE SOBREVIVÊNCIA"
   },{
     "name": "contato",
-    "label": "CONTATO",
-    "selected": false
+    "label": "CONTATO"
   }],
+  "sections": ["home", "sobre", "subscribe", "palestrantes", "programacao", "subscribe", "patrocinio", "local", "guia-de-sobrevivencia", "contato"],
   "palestrantes": [{
     "name": "Pedro Polisenso",
     "description": "Sou dev transante"

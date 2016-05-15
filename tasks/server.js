@@ -1,18 +1,16 @@
 //'watch'
 import gulp from 'gulp';
+import livereload from 'gulp-livereload';
 import server from 'gulp-express';
 
 module.exports = () => {
   server.run(['server/app.babel.js'])
 
-  const notify = (file) => {
-    server.notify(file);
-  };
+  livereload.listen({port: 8081});
+  gulp.watch(['assets/sass/**/*.scss'], ['sass']);
+  gulp.watch(['assets/svg/**/*.svg'], ['svgstore']);
 
-  gulp.watch(['./template.js']).on('change', notify);
-  gulp.watch(['assets/sass/**/*.scss'], ['sass']).on('change', notify);
-  gulp.watch(['assets/svg/**/*.scss'], ['svgstore']).on('change', notify);
-
-  gulp.watch(['assets/img/*.*'], ['img']).on('change', notify);
-  gulp.watch(['server/**/*.js'], [server.run]);
+  gulp.watch(['assets/img/*.*'], ['img']);
+  gulp.watch(['server/**/*.js'], ['img', 'sass', 'vendor'])
+    .on('change', () => server.run(['server/app.babel.js']));
 };

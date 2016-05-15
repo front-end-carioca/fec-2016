@@ -1,8 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
+* {font-family: 'Open Sans', sans-serif;}
 
 .svgstore {
   height: 0;
@@ -11,12 +11,27 @@ body {
   width: 0;
 }
 
-.btn-default {
-  background: #FFCF27;
-  border-color: #FFCF27;
+.btn, .btn:hover {
+  text-shadow: none;
 }
 
-@include respond-to('sm') {
+.btn-default {
+  background: rgba(255,255,255, 0.5);
+  border-color: rgba(255,255,255, 0.5);
+  color: #fff;
+}
+.btn-primary {
+  background: #FFCF27;
+  border-color: #FFCF27;
+  color: #363C44;
+  &:hover {
+    background: #EFBF17;
+    border-color: #EFBF17;
+    // color: #FFF;
+  }
+}
+
+@include respond-to('basic') {
   .container {
     padding: 0;
     margin: 0;
