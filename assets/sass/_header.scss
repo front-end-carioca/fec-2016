@@ -15,10 +15,6 @@
           }
         }
       }
-      &-header {
-        width: 100%;
-        margin: 0;
-      }
       &-toggle {
         margin-right: 15px;
         margin-top: 15px;
@@ -59,15 +55,16 @@
           max-width: 300px;
         }
       }
-      &-collapse {
-        background: transparent;
-      }
     }
   }
 }
 @include respond-to('lg') {
   .navbar-default {
     .navbar {
+      &-collapse {
+        float: right!important;
+        margin: 0;
+      }
       &-header {
         width: auto;
       }
@@ -75,6 +72,9 @@
         background-size: auto;
         float: left;
         text-align: left;
+      }
+      &-collapse {
+        background: transparent;
       }
     }
   }

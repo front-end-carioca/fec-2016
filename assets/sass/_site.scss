@@ -30,6 +30,20 @@ body {
     // color: #FFF;
   }
 }
+.section {
+  padding: 20px 0;
+  &-title {
+    text-align: center;
+  }
+  &-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    span {
+      border-bottom: 1px solid #FFCF27;
+    }
+  }
+}
 
 @include respond-to('basic') {
   .container {

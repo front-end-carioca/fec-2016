@@ -1,8 +1,8 @@
 .subscribe {
-  display: none;
-  position: relative;
-  @include flexbox;
   align-items: center;
+  padding: 20px 10px;
+  text-align: center;
+  background: #363C44;
 
   &:before {
     content: '';
@@ -14,5 +14,17 @@
     -webkit-transform: skew(30deg);
     -ms-transform: skew(30deg);
     transform: skew(30deg);
+  }
+  .title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 20px;
+    color: #FFF;
+  }
+  .button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
   }
 }

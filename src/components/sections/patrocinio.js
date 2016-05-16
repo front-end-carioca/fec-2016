@@ -8,7 +8,7 @@ class Patrocinio extends Component {
   render() {
     const {name, children} = this.props;
     return (
-      <section id={name}>
+      <section className="section" id={name}>
         <div style={{height: '700px', background: `#00F`}}>
         </div>
         {children}
