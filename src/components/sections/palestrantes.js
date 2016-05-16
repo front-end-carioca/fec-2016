@@ -9,14 +9,14 @@ class Palestrantes extends Component {
   }
 
   render() {
-    const {name, store, children} = this.props;
+    const {name, palestrantes, children} = this.props;
     return (
       <section className="section" id={name}>
         <h2 className="section-title">PALESTRANTES</h2>
         <h3 className="section-subtitle"><span>Veja a lista dos nossos palestrantes do evento</span></h3>
         <Grid>
           <Row>
-          {store.palestrantes.map((p, i) =>
+          {palestrantes.map((p, i) =>
             <Col key={i} xs={12} sm={3}>
               <div className="palestrante">
                 <img className="avatar" src={p.avatar} />

@@ -42,5 +42,13 @@
     "name": "Pedro Polisenso",
     "avatar": "/img/avatar.jpg",
     "description": "Sou dev transante"
-  }]
+  }],
+  "patrocinadores": {
+    "Platinum": ["Vtex"],
+    "Vip": ["Aotopo"],
+    "Ouro": ["Deving"],
+    "Prata": ["Eventick"],
+    "Bronze": ["Chocodesign"],
+    "Apoio": ["Globo.com", "Uol", "YouTube"]
+  }
 }

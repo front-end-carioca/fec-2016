@@ -10,6 +10,7 @@ const mapStateToProps = (state) => {
     sectionSelected: state.sections.sectionSelected,
     items: state.sections.items,
     sections: state.sections.sections,
+    patrocinadores: state.sections.patrocinadores,
     palestrantes: state.sections.palestrantes
   };
 }

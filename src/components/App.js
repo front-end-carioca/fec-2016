@@ -26,7 +26,7 @@ class App extends Component {
         <Menu {...props} />
         {props.sections.map( (section, i) => {
           const Section = this.getSection(section);
-          return <Section key={i} name={section} store={props} />;
+          return <Section key={i} name={section} {...props} />;
         })}
       </div>
     );
