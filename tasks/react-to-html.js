@@ -15,7 +15,7 @@ module.exports = (callback)  => {
   gutil.log(`\u001b[33m[react-to-string] - RenderToString timing ${Date.now() - startRender}ms\u001b[39m`)
   glob(path.resolve(__dirname, '../dist/*.js'), (err, files) => {
     const index = ejs.render(template, {
-      assets: files.map(file=>`/${path.relative('./dist', file)}`),
+      assets: files.map(file=>`${path.relative('./dist', file)}`),
       html: html
     });
 
