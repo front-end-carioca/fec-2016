@@ -20,7 +20,7 @@ class Patrocinio extends Component {
               <Row>
               {patrocinadores.Platinum.map((p, i) =>
                 <Col key={i} xs={12}>
-                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                  <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                 </Col>
               )}
               </Row>
@@ -32,7 +32,7 @@ class Patrocinio extends Component {
               <Row>
               {patrocinadores.Vip.map((p, i) =>
                 <Col key={i} xs={12}>
-                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                  <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                 </Col>
               )}
               </Row>
@@ -44,7 +44,7 @@ class Patrocinio extends Component {
               <Row>
               {patrocinadores.Ouro.map((p, i) =>
                 <Col key={i} xs={12}>
-                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                  <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                 </Col>
               )}
               </Row>
@@ -54,7 +54,7 @@ class Patrocinio extends Component {
               <Row>
               {patrocinadores.Prata.map((p, i) =>
                 <Col key={i} xs={12}>
-                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                  <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                 </Col>
               )}
               </Row>
@@ -64,7 +64,7 @@ class Patrocinio extends Component {
               <Row>
               {patrocinadores.Bronze.map((p, i) =>
                 <Col key={i} xs={12}>
-                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                  <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                 </Col>
               )}
               </Row>
@@ -76,7 +76,7 @@ class Patrocinio extends Component {
               <Row>
                 {patrocinadores.Apoio.map((p, i) =>
                   <Col key={i} xs={12} sm={4}>
-                    <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                    <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                   </Col>
                 )}
               </Row>

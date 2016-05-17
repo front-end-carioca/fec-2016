@@ -21969,22 +21969,22 @@
 		"palestrantes": [
 			{
 				"name": "Pedro Polisenso - 1",
-				"avatar": "/img/avatar.jpg",
+				"avatar": "img/avatar.jpg",
 				"description": "Sou dev transante"
 			},
 			{
 				"name": "Pedro Polisenso - 2",
-				"avatar": "/img/avatar.jpg",
+				"avatar": "img/avatar.jpg",
 				"description": "Sou dev transante"
 			},
 			{
 				"name": "Pedro Polisenso - 3",
-				"avatar": "/img/avatar.jpg",
+				"avatar": "img/avatar.jpg",
 				"description": "Sou dev transante"
 			},
 			{
 				"name": "Pedro Polisenso - 4",
-				"avatar": "/img/avatar.jpg",
+				"avatar": "img/avatar.jpg",
 				"description": "Sou dev transante"
 			}
 		],
@@ -22266,7 +22266,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { className: 'logo', href: '/' },
-	              _react2.default.createElement('img', { src: '/img/navbrand.png' })
+	              _react2.default.createElement('img', { src: 'img/navbrand.png' })
 	            )
 	          )
 	        ),
@@ -27698,7 +27698,7 @@
 	                  return _react2.default.createElement(
 	                    _Col2.default,
 	                    { key: i, xs: 12 },
-	                    _react2.default.createElement('img', { src: '/img/patrocinadores/' + p.image, title: p.name })
+	                    _react2.default.createElement('img', { src: 'img/patrocinadores/' + p.image, title: p.name })
 	                  );
 	                })
 	              )
@@ -27722,7 +27722,7 @@
 	                  return _react2.default.createElement(
 	                    _Col2.default,
 	                    { key: i, xs: 12 },
-	                    _react2.default.createElement('img', { src: '/img/patrocinadores/' + p.image, title: p.name })
+	                    _react2.default.createElement('img', { src: 'img/patrocinadores/' + p.image, title: p.name })
 	                  );
 	                })
 	              )
@@ -27746,7 +27746,7 @@
 	                  return _react2.default.createElement(
 	                    _Col2.default,
 	                    { key: i, xs: 12 },
-	                    _react2.default.createElement('img', { src: '/img/patrocinadores/' + p.image, title: p.name })
+	                    _react2.default.createElement('img', { src: 'img/patrocinadores/' + p.image, title: p.name })
 	                  );
 	                })
 	              )
@@ -27766,7 +27766,7 @@
 	                  return _react2.default.createElement(
 	                    _Col2.default,
 	                    { key: i, xs: 12 },
-	                    _react2.default.createElement('img', { src: '/img/patrocinadores/' + p.image, title: p.name })
+	                    _react2.default.createElement('img', { src: 'img/patrocinadores/' + p.image, title: p.name })
 	                  );
 	                })
 	              )
@@ -27786,7 +27786,7 @@
 	                  return _react2.default.createElement(
 	                    _Col2.default,
 	                    { key: i, xs: 12 },
-	                    _react2.default.createElement('img', { src: '/img/patrocinadores/' + p.image, title: p.name })
+	                    _react2.default.createElement('img', { src: 'img/patrocinadores/' + p.image, title: p.name })
 	                  );
 	                })
 	              )
@@ -27810,7 +27810,7 @@
 	                  return _react2.default.createElement(
 	                    _Col2.default,
 	                    { key: i, xs: 12, sm: 4 },
-	                    _react2.default.createElement('img', { src: '/img/patrocinadores/' + p.image, title: p.name })
+	                    _react2.default.createElement('img', { src: 'img/patrocinadores/' + p.image, title: p.name })
 	                  );
 	                })
 	              )

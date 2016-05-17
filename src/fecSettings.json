@@ -28,19 +28,19 @@
   "sections": ["header", "sobre", "subscribe", "palestrantes", "programacao", "subscribe", "patrocinio", "local", "guia-de-sobrevivencia", "contato"],
   "palestrantes": [{
     "name": "Pedro Polisenso - 1",
-    "avatar": "/img/avatar.jpg",
+    "avatar": "img/avatar.jpg",
     "description": "Sou dev transante"
   },{
     "name": "Pedro Polisenso - 2",
-    "avatar": "/img/avatar.jpg",
+    "avatar": "img/avatar.jpg",
     "description": "Sou dev transante"
   },{
     "name": "Pedro Polisenso - 3",
-    "avatar": "/img/avatar.jpg",
+    "avatar": "img/avatar.jpg",
     "description": "Sou dev transante"
   },{
     "name": "Pedro Polisenso - 4",
-    "avatar": "/img/avatar.jpg",
+    "avatar": "img/avatar.jpg",
     "description": "Sou dev transante"
   }],
   "patrocinadores": {

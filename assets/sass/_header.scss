@@ -1,6 +1,6 @@
 @include respond-to('basic') {
   .header {
-    background: url(/img/fec_background.png) no-repeat center center;
+    background: url(../img/fec_background.png) no-repeat center center;
     background-size: cover;
     padding: 195px 0;
     color: #fff;

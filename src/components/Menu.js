@@ -45,7 +45,7 @@ class Menu extends Component {
           <Navbar.Toggle />
           <Navbar.Brand>
             <a className='logo' href='/'>
-              <img src="/img/navbrand.png" />
+              <img src="img/navbrand.png" />
             </a>
           </Navbar.Brand>
         </Navbar.Header>
