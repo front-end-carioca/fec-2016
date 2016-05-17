@@ -1,20 +1,38 @@
 .palestrante {
-  position: relative;
+  margin: 15px 0;
   overflow: hidden;
+  position: relative;
   .avatar {
     width: 100%;
   }
   .details {
+    background: #FFCF27;
+    height: 100%;
     position: absolute;
-    transform: translate3d(-100%, 0, 0);
     top:0;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform linear 500ms 200ms;
     width: 100%;
   }
-
-  &:hover {
+  .opened &, &:hover {
     .details {
       transform: translate3d(0,0,0);
-      transition: transform linear 500ms;
     }
   }
+
+  .more-details {
+    background: transparent;
+    border: none;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 2em;
+    z-index: 1;
+    .material-icons {
+      font-size: 1em;
+    }
+  }
+
 }

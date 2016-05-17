@@ -11,13 +11,10 @@ class Sobre extends Component {
   render() {
     const {name, children} = this.props;
     return (
-      <section className="section" id={name}>
+      <section className="section sobre" id={name}>
         <Grid>
           <Row>
-            <Col xs={12} md={6}>
-              <div className="logo"><img src="/img/fec-logo-icon-2x.png" /></div>
-            </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12}>
               <div className="content">
                 <h2 className="title">SOBRE</h2>
                 <p>O Front-end Carioca Surgiu de uma idéia dentro da comunidade de desenvolvedores web, tendo como obijetivo enriquecer o conhecimento profissional através de ciclos de palestras, workshops, networking e é claro bastante incentivo.</p>

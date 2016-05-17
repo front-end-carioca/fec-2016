@@ -1,0 +1,86 @@
+@include respond-to('basic') {
+  .navbar-default {
+    background: #363C44;
+    border: none;
+    box-shadow:none;
+    .navbar {
+      &-nav{
+        margin: 10px 15px;
+        >li>a {
+          color:#FFF;
+          padding: 15px 10px;
+          text-shadow: none;
+          &:hover, &:focus {
+            color:#666;
+            background-color:transparent;
+          }
+        }
+      }
+      &-toggle {
+        margin-right: 15px;
+        margin-top: 15px;
+        background: transparent;
+        .icon-bar {
+          background-color:#FFF;
+        }
+      }
+      &-collapse {
+        background: rgba(0,0,0,.35);
+      }
+      &-brand {
+        align-items: center;
+        display: flex;
+        height: auto;
+        padding: 10px 15px;
+        > img {
+          max-width: 230px;
+        }
+      }
+    }
+  }
+}
+@include respond-to('md') {
+  .navbar-default {
+    .navbar {
+      &-nav {
+        align-items: center;
+        @include flexbox();
+        height: 85px;
+      }
+      &-collapse {
+        background: transparent;
+      }
+      &-brand {
+        display: block;
+        float: none;
+        padding: 10px 0 0;
+        margin: 0 auto;
+        > img {
+          max-width: 300px;
+          display: inline;
+        }
+      }
+    }
+  }
+}
+@include respond-to('lg') {
+  .navbar-default {
+    .navbar {
+      &-collapse {
+        float: right!important;
+        margin: 0;
+      }
+      &-header {
+        width: auto;
+      }
+      &-brand {
+        background-size: auto;
+        float: left;
+        text-align: left;
+      }
+      &-collapse {
+        background: transparent;
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@ class Home extends Component {
     if (typeof window !== 'undefined') {
       this.setState({
         styles: {
-          height: window.outerHeight
+          minHeight: window.outerHeight
         }
       });
     }
@@ -25,7 +25,7 @@ class Home extends Component {
     const {name, content, children} = this.props;
     const {styles} = this.state;
     return (
-      <header id={name} style={styles}>
+      <header id={name} className="header" style={styles}>
         <h1 className="title">A MAIOR<br />CONFERÊNCIA WEB</h1>
         <h3 className="subtitle">Rio de Janeiro<br />22 DE OUTUBRO 2016</h3>
         <div className="wrap-buttons">

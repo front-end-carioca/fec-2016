@@ -40,7 +40,7 @@ class Menu extends Component {
     const { items, sectionSelected } = this.props;
 
     return (
-      <Navbar className={`${sectionSelected}`} fixedTop={true}>
+      <Navbar fixedTop={true}>
         <Navbar.Header>
           <Navbar.Toggle />
           <Navbar.Brand>
@@ -49,7 +49,7 @@ class Menu extends Component {
             </a>
           </Navbar.Brand>
         </Navbar.Header>
-        <Navbar.Collapse className="pull-right">
+        <Navbar.Collapse>
           <Nav>
             {(items ? items.map((item, i) => {
               return <NavItem

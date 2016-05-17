@@ -1,6 +1,4 @@
-#sobre {
-  // background: url(/img/fec_background.png) no-repeat center center;
-  // background-size: cover;
+.sobre {
   @include flexbox;
   padding: 20px 0 40px;
   color: #fff;
@@ -20,13 +18,13 @@
   .content {
     @include flex(1);
     color: #363C44;
-    text-align: left;
     padding-right: 20px;
     .title {
       font-size: 3em;
       font-weight: 400;
     }
     p {
+      text-align: left;
       font-size: 1.2em;
       line-height: 1.5em
     }

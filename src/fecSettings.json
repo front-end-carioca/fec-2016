@@ -1,8 +1,8 @@
 {
-  "sectionSelected": "home",
+  "sectionSelected": "header",
   "items": [{
-    "name": "home",
-    "label": "HOME"
+    "name": "header",
+    "label": "INÍCIO"
   },{
     "name": "sobre",
     "label": "SOBRE"
@@ -25,21 +25,21 @@
     "name": "contato",
     "label": "CONTATO"
   }],
-  "sections": ["home", "sobre", "subscribe", "palestrantes", "programacao", "subscribe", "patrocinio", "local", "guia-de-sobrevivencia", "contato"],
+  "sections": ["header", "sobre", "subscribe", "palestrantes", "programacao", "subscribe", "patrocinio", "local", "guia-de-sobrevivencia", "contato"],
   "palestrantes": [{
-    "name": "Pedro Polisenso",
+    "name": "Pedro Polisenso - 1",
     "avatar": "/img/avatar.jpg",
     "description": "Sou dev transante"
   },{
-    "name": "Pedro Polisenso",
+    "name": "Pedro Polisenso - 2",
     "avatar": "/img/avatar.jpg",
     "description": "Sou dev transante"
   },{
-    "name": "Pedro Polisenso",
+    "name": "Pedro Polisenso - 3",
     "avatar": "/img/avatar.jpg",
     "description": "Sou dev transante"
   },{
-    "name": "Pedro Polisenso",
+    "name": "Pedro Polisenso - 4",
     "avatar": "/img/avatar.jpg",
     "description": "Sou dev transante"
   }],

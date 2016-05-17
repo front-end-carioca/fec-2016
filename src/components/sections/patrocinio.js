@@ -17,34 +17,68 @@ class Patrocinio extends Component {
           <Row>
             <Col xs={12}>
               <h2 className="status">Platinum</h2>
-              {patrocinadores.Platinum.map(p => <img src={`/img/patrocinadores/${p.image}`} title={p.name} />)}
+              <Row>
+              {patrocinadores.Platinum.map((p, i) =>
+                <Col key={i} xs={12}>
+                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                </Col>
+              )}
+              </Row>
             </Col>
           </Row>
           <Row>
             <Col xs={12}>
               <h2 className="status">Vip</h2>
-              {patrocinadores.Vip.map(p => <img src={`/img/patrocinadores/${p.image}`} title={p.name} />)}
+              <Row>
+              {patrocinadores.Vip.map((p, i) =>
+                <Col key={i} xs={12}>
+                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                </Col>
+              )}
+              </Row>
             </Col>
           </Row>
           <Row>
-            <Col xs={4}>
+            <Col xs={12} sm={4}>
               <h2 className="status">Ouro</h2>
-              {patrocinadores.Ouro.map(p => <img src={`/img/patrocinadores/${p.image}`} title={p.name} />)}
+              <Row>
+              {patrocinadores.Ouro.map((p, i) =>
+                <Col key={i} xs={12}>
+                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                </Col>
+              )}
+              </Row>
             </Col>
-            <Col xs={4}>
+            <Col xs={12} sm={4}>
               <h2 className="status">Prata</h2>
-              {patrocinadores.Prata.map(p => <img src={`/img/patrocinadores/${p.image}`} title={p.name} />)}
+              <Row>
+              {patrocinadores.Prata.map((p, i) =>
+                <Col key={i} xs={12}>
+                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                </Col>
+              )}
+              </Row>
             </Col>
-            <Col xs={4}>
+            <Col xs={12} sm={4}>
               <h2 className="status">Bronze</h2>
-              {patrocinadores.Bronze.map(p => <img src={`/img/patrocinadores/${p.image}`} title={p.name} />)}
+              <Row>
+              {patrocinadores.Bronze.map((p, i) =>
+                <Col key={i} xs={12}>
+                  <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                </Col>
+              )}
+              </Row>
             </Col>
           </Row>
           <Row>
             <Col xs={12}>
               <h2 className="status">Apoi</h2>
               <Row>
-                {patrocinadores.Apoio.map(p => <Col xs={12} sm={4}><img src={`/img/patrocinadores/${p.image}`} title={p.name} /></Col>)}
+                {patrocinadores.Apoio.map((p, i) =>
+                  <Col key={i} xs={12} sm={4}>
+                    <img src={`/img/patrocinadores/${p.image}`} title={p.name} />
+                  </Col>
+                )}
               </Row>
             </Col>
           </Row>
