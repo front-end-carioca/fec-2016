@@ -9,7 +9,7 @@ const Palestrante = ({i, name, avatar, opened, description, onClickDetails}) => 
   return <Col className={classOpened} xs={12} sm={6} md={4}>
     <div className="palestrante">
       <img className="avatar" src={avatar} />
-      {('ontouchstart' in window ?
+      {(typeof window !== 'undefined' && 'ontouchstart' in window ?
         <button className="more-details" onClick={onClickDetails}><i className="material-icons">more_vert</i></button> :
         ''
       )}

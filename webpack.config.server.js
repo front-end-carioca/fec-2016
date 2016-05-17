@@ -1,6 +1,5 @@
 var ejs = require('ejs');
 var path = require('path');
-var ReactToHtmlPlugin = require('./reactToStringWebpack');
 var webpack = require('webpack');
 var template = require('./template');
 
@@ -22,12 +21,6 @@ var config = {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
-    }),
-    new ReactToHtmlPlugin('index.html', 'bundle.js', {
-      static: 'renderToStaticMarkup',
-      template: function(data) {
-        return ejs.render(template, data);
-      }
     })
   ],
   module: {

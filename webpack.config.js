@@ -1,6 +1,5 @@
 var ejs = require('ejs');
 var path = require('path');
-var ReactToHtmlPlugin = require('./reactToStringWebpack');
 var webpack = require('webpack');
 var template = require('./template');
 
