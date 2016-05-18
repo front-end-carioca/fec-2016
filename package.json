@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp start",
-    "build": "gulp dist",
+    "build": "NODE_ENV=production gulp dist",
     "lint": "eslint src"
   },
   "devDependencies": {

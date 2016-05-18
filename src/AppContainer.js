@@ -11,7 +11,8 @@ const mapStateToProps = (state) => {
     items: state.sections.items,
     sections: state.sections.sections,
     patrocinadores: state.sections.patrocinadores,
-    palestrantes: state.sections.palestrantes
+    palestrantes: state.sections.palestrantes,
+    programacao: state.sections.programacao
   };
 }
 

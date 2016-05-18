@@ -19,4 +19,5 @@ const server = new WebpackDevServer(compiler, {
     modules: false,
   }
 });
+
 server.listen(8080);

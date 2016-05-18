@@ -6,15 +6,27 @@
     .navbar {
       &-nav{
         margin: 10px 15px;
-        >li>a {
-          color:#FFF;
-          padding: 15px 10px;
-          text-shadow: none;
-          &:hover, &:focus {
+        >li {
+          >a {
+            color:#FFF;
+            padding: 15px 10px;
+            text-shadow: none;
+            &:hover, &:focus {
+              color:#666;
+              background:transparent;
+            }
+          }
+          &.active a:hover{
             color:#666;
-            background-color:transparent;
+            background:transparent;
+          }
+          &.active a,
+          &.active a:focus {
+            background:transparent;
+            color: #fff;
           }
         }
+
       }
       &-toggle {
         margin-right: 15px;

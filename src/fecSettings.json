@@ -25,7 +25,7 @@
     "name": "contato",
     "label": "CONTATO"
   }],
-  "sections": ["header", "sobre", "subscribe", "palestrantes", "programacao", "subscribe", "patrocinio", "local", "guia-de-sobrevivencia", "contato"],
+  "sections": ["header", "sobre", "subscribe", "palestrantes", "programacao", "patrocinio", "subscribe", "local", "guia-de-sobrevivencia", "contato"],
   "palestrantes": [{
     "name": "Pedro Polisenso - 1",
     "avatar": "img/avatar.jpg",
@@ -54,5 +54,68 @@
       {"name": "Uol", "image": "uol.png"},
       {"name": "YouTube", "image": "youtube.png"}
     ]
-  }
+  },
+  "programacao": [
+    {
+      "periodo": "manha",
+      "atividades": [{
+          "horario": "8:00 - 9:00",
+          "titulo": "Credenciamento",
+          "palestrante": "Chegue cedo!",
+          "especialidade": "",
+          "descricao": "Tenha em mãos documento com foto para facilitar sua entrada no evento."
+      },{
+          "horario": "9:00 - 10:00",
+          "titulo": "Abertura",
+          "palestrante": "Não se atrase",
+          "especialidade": "",
+          "descricao": "Nosso ciclo de palestras começa pontualmente as 9h lembre de pegar um lugar bem perto do palco."
+      },{
+          "horario": "10:00 - 11:00",
+          "titulo": "Título da Apresentação",
+          "palestrante": "Palestrante",
+          "especialidade": "Especialidade",
+          "descricao": "Uma breve descrição da palestra."
+      },{
+          "horario": "11:00 - 12:00",
+          "titulo": "Título da Apresentação",
+          "palestrante": "Palestrante",
+          "especialidade": "Especialidade",
+          "descricao": "Uma breve descrição da palestra."
+      },{
+          "horario": "12:00 - 13:00",
+          "titulo": "Almoço",
+          "palestrante": "Vai dar sono depois...",
+          "especialidade": "",
+          "descricao": "Aproveita o almoço e faça networking, lembre que depois temos muito mais."
+      }]
+    },{
+      "periodo": "tarde",
+      "atividades": [{
+          "horario": "13:00 - 14:00",
+          "titulo": "Título da Apresentação",
+          "palestrante": "Palestrante",
+          "especialidade": "Especialidade",
+          "descricao": "Uma breve descrição da palestra."
+      },{
+          "horario": "13:00 - 14:00",
+          "titulo": "Título da Apresentação",
+          "palestrante": "Palestrante",
+          "especialidade": "Especialidade",
+          "descricao": "Uma breve descrição da palestra."
+      },{
+          "horario": "13:00 - 14:00",
+          "titulo": "Título da Apresentação",
+          "palestrante": "Palestrante",
+          "especialidade": "Especialidade",
+          "descricao": "Uma breve descrição da palestra."
+      },{
+          "horario": "13:00 - 14:00",
+          "titulo": "Título da Apresentação",
+          "palestrante": "Palestrante",
+          "especialidade": "Especialidade",
+          "descricao": "Uma breve descrição da palestra."
+      }]
+    }
+  ]
 }

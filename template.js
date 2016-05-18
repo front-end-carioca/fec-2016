@@ -1,7 +1,7 @@
 module.exports = `<!doctype html>
 <html>
   <head>
-    <title>Sample App</title>
+    <title>Front-End Carioca</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- vendor:css -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600' rel='stylesheet' type='text/css'>
