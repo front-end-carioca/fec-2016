@@ -14,8 +14,7 @@
     transition: transform linear 500ms 200ms;
     width: 100%;
   }
-  .opened &, &:hover {
-    .details {
+  .opened & .details {
       transform: translate3d(0,0,0);
     }
   }

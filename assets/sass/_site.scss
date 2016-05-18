@@ -36,23 +36,20 @@ body {
   overflow: hidden;
   &-title {
     text-align: center;
-    font: 300 36px/36px roboto;
+    font: 300 26px/36px roboto;
   }
   &-subtitle {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 50px;
     span {
-      border-bottom: 1px solid #FFCF27;
+      // border-bottom: 1px solid #FFCF27;
     }
   }
 }
 
 @include respond-to('basic') {
-  .container {
-    padding: 0;
-    margin: 0;
-  }
+
 }
 @include respond-to('md') {
   .container {

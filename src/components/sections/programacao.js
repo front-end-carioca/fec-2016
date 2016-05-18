@@ -40,6 +40,13 @@ const Programacao = ({name, programacao, children}) => {
               )}
             </Tab.Content>
           </Col>
+          <Col visibleXsBlock sm={12}>
+            <Nav bsStyle="tabs">
+              {programacao.map((t,i) =>
+                <NavItem key={i} eventKey={`tab${i}`}>{t.periodo}</NavItem>
+              )}
+            </Nav>
+          </Col>
         </Row>
       </Tab.Container>
     </section>

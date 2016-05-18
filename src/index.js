@@ -20,7 +20,7 @@ const ProviderApp = () => <Provider store={store}>
   </Provider>;
 
 if (typeof document !== 'undefined') {
-  render( ProviderApp(), document.getElementById('app'));
+  render(ProviderApp(), document.getElementById('app'));
 }
 
 
