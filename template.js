@@ -22,6 +22,7 @@ module.exports = `<!doctype html>
     <div id="app">
       <%- html %>
     </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"></script>
     <% for (var chunk in assets) { -%><script src="<%= assets[chunk] %>"></script><% } -%>
   </body>
 </html>`;
