@@ -24,7 +24,7 @@ module.exports = () => {
     return file.contents.toString();
   }
 
-  return gulp.src('./dist/index.html')
+  return gulp.src(['./index.html','./dist/index.html'])
     .pipe(inject(svgs, { transform: transformContent }))
     .pipe(gulp.dest('./dist'));
 };

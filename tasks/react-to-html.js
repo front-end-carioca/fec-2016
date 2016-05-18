@@ -15,11 +15,11 @@ module.exports = (callback)  => {
   gutil.log(`\u001b[33m[react-to-string] - RenderToString timing ${Date.now() - startRender}ms\u001b[39m`)
   glob(path.resolve(__dirname, '../dist/*.js'), (err, files) => {
     const index = ejs.render(template, {
-      assets: files.map(file=>`${path.relative('./dist', file)}`),
+      assets: files.map(file=>`${path.relative('./', file)}`),
       html: html
     });
 
-    fs.writeFile('./dist/index.html', index, (err, output) =>{
+    fs.writeFile('./index.html', index, (err, output) =>{
       if(err) throw new gutil.PluginError("react-to-string", err);
       gutil.log('\u001b[32m[react-to-string]\u001b[39m - output file \u001b[33m"./dist/index.html"\u001b[39m')
       callback();
