@@ -13,6 +13,7 @@ module.exports = `<!doctype html>
     <!-- inject:css -->
     <link rel="stylesheet" href="dist/css/styles.css" />
     <!-- endinject -->
+    <base href="/fec-2016/dist" />
   </head>
   <body>
     <div class="svgstore">
