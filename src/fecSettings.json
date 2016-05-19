@@ -25,7 +25,6 @@
     "name": "contato",
     "label": "CONTATO"
   }],
-  "sections": ["header", "sobre", "subscribe", "palestrantes", "programacao", "patrocinio", "subscribe", "local", "guia-de-sobrevivencia", "contato"],
   "palestrantes": [{
     "name": "Pedro Polisenso - 1",
     "expecialidade": "Polisysyem",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectSection, unselectAllSections } from './actions';
+import { selectSection } from './actions';
 import fecSettings from './fecSettings.json';
 import App from './components/App';
 
@@ -20,10 +20,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onSelect: (name,event) => {
       dispatch(selectSection(name))
-    },
-
-    onUnselectAll: (name,event) => {
-      dispatch(unselectAllSections())
     }
   }
 }

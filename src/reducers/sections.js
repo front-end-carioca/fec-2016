@@ -9,15 +9,23 @@ const sections = (state = initialState, action) => {
         s.selected = false;
         return s;
       });
-      return Object.assign({}, state, { items:items })
+      return {
+        ...state,
+        sections:items
+      };
     case 'SELECT_SECTION':
       items = state.items.map((s) => {
         s.selected = (utils.cleanSpecialChars(s.name, true, true) === action.sectionName);
         return s;
       });
-      return Object.assign({}, state, { items:items });
+      return {
+        ...state,
+        sections: items
+      };
     default:
-      return Object.assign({}, state);
+      return {
+        ...state
+      };
   }
 }
 
