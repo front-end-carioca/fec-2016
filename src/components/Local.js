@@ -22,6 +22,7 @@ const Local = ({name}) => {
           <GoogleMap
             ref={(map) => console.log(map)}
             defaultZoom={17}
+            disableDefaultUI={true}
             defaultCenter={{ lat: -23.0046326, lng: -43.3410536 }}>
             {markers.map((marker, index) => {
               return (

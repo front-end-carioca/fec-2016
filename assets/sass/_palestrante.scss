@@ -1,5 +1,6 @@
 .palestrante {
-  margin: 15px 0;
+  margin: 15px auto;
+  max-width: 270px;
   overflow: hidden;
   position: relative;
   .avatar {
@@ -7,15 +8,28 @@
   }
   .details {
     background: #FFCF27;
+    color: #363C44;
     height: 100%;
+    padding: 10px 25px;
     position: absolute;
     top:0;
     transform: translate3d(-100%, 0, 0);
     transition: transform linear 500ms 200ms;
     width: 100%;
-  }
-  .opened & .details {
-    transform: translate3d(0,0,0);
+    &.opened {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .name {
+      font: 400 16px/14px Roboto;
+    }
+    .specialty {
+      font: italic 300 14px/14px Roboto;
+      margin: 0 0 10px;
+    }
+    .description {
+      font: 300 14px/14px Roboto;
+    }
   }
 
   .more-details {
@@ -32,5 +46,14 @@
       font-size: 1em;
     }
   }
+}
 
+@include respond-to('md') {
+  .palestrante {
+    &:hover {
+      .details {
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
 }

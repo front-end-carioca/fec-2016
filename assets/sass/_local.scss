@@ -3,5 +3,7 @@
   min-height: 500px;
   .wrapper-maps {
     min-height: 500px;
+    pointer-events: none;
+    margin: -20px -15px;
   }
 }

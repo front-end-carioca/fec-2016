@@ -10,3 +10,10 @@ export const unselectAllSections = () => {
     type: 'UNSELECT_ALL_SECTIONS'
   }
 }
+
+export const toggleDetails = (index) => {
+  return {
+    type: 'SHOW_DETAILS',
+    index
+  }
+}

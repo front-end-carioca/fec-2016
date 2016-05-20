@@ -37,7 +37,7 @@ class Menu extends Component {
     scroll.scrollTo(sTop);
   }
   render () {
-    const { items, sectionSelected } = this.props;
+    const { items } = this.props;
 
     return (
       <Navbar fixedTop={true}>
