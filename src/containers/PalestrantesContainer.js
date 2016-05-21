@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { toggleDetails } from '../actions';
-import fecSettings from '../fecSettings.json';
 import Palestrantes from '../components/Palestrantes';
 
 

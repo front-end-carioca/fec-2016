@@ -120,5 +120,76 @@
           "descricao": "Uma breve descrição da palestra."
       }]
     }
-  ]
+  ],
+  "guia": [{
+    "type": "COMO CHEGAR",
+    "instrucoes": [
+      {
+        "title": "De Carro",
+        "infos": {
+          "label": "Por 2 vias expressas",
+          "distancia": "",
+          "opcoes": [],
+          "cupom": ""
+        }
+      },{
+        "title": "De Ônibus",
+        "infos": {
+          "label": "Há 5 linhas dispoíveis de ônibus",
+          "distancia": "",
+          "opcoes": [
+            "linha 200",
+            "linha 201",
+            "linha 202",
+            "linha 203",
+            "linha 204"
+          ],
+          "cupom": ""
+        }
+      },{
+        "title": "De Metrô",
+        "infos": {
+          "label": "Deverá saltar na Uruguaiana e seguir a pé tendo duas opções",
+          "distancia": "",
+          "opcoes": [
+            "Atravesse a Av. Presidente Vargas, siga pela R. Acre até chegar à Praça Mauá / Museu do Amanhã",
+            "Siga pela Av. Presidente Vargas no sengido da Igreja da Candelária, dobre à esquerda na Av. Rio Branco e siga em frente até chegar à Praça Mauá / Museu do Amanhã"
+          ],
+          "cupom": ""
+        }
+      }
+    ]
+  },{
+    "type": "ACOMODAÇÕES",
+    "instrucoes": [
+      {
+        "title": "Hotel",
+        "infos": {
+          "label": "Hotel",
+          "distancia": "8km do evento",
+          "opcoes": [],
+          "cupom": ""
+        }
+      },{
+        "title": "Hotel",
+        "infos": {
+          "label": "Hotel",
+          "distancia": "8km do evento",
+          "opcoes": [],
+          "cupom": ""
+        }
+      },{
+        "title": "Hotel",
+        "infos": {
+          "label": "Hotel",
+          "distancia": "8km do evento",
+          "opcoes": [
+            "End: Av. Atlantica, 2600 - Copacabana, Rio de Janeiro - RJ, 22041-001",
+            "Telefone: (21) 2545-6500"
+          ],
+          "cupom": "FECDESCONTO"
+        }
+      }
+    ]
+  }]
 }
