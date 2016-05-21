@@ -7,13 +7,12 @@ module.exports = `<!doctype html>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="dist/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="dist/css/vendor/bootstrap/bootstrap.theme.min.css" rel="stylesheet" />
+    <link href="css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/vendor/bootstrap/bootstrap.theme.min.css" rel="stylesheet" />
     <!-- endinject -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- endinject -->
-    <base href="/fec-2016/dist/" />
   </head>
   <body>
     <div class="svgstore">
@@ -27,8 +26,5 @@ module.exports = `<!doctype html>
     <% for (var chunk in assets) { -%>
     <script src="<%= assets[chunk] %>"></script>
     <% } -%>
-    <script>
-      window.location = '/fec-2016/dist/';
-    </script>
   </body>
 </html>`;
