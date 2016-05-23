@@ -30503,28 +30503,28 @@
 		],
 		"palestrantes": [
 			{
-				"name": "Pedro Polisenso - 1",
-				"expecialidade": "Polisysyem",
+				"name": "Nome do Palestrante",
+				"expecialidade": "Expecialidade",
 				"avatar": "img/avatar.jpg",
-				"description": "Sou dev transante"
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ligula sed sapien rutrum tincidunt. Donec in massa gravida, gravida neque at, dapibus quam. Cras lobortis mattis enim vitae sagittis. Quisque vehicula eget tellus a lobortis. Nam nunc nisi, elementum non mauris quis, porta tempor leo. Nulla vehicula eros eleifend elit suscipit pretium. In laoreet ornare risus sit amet pretium."
 			},
 			{
-				"name": "Pedro Polisenso - 2",
-				"expecialidade": "Polisysyem",
+				"name": "Nome do Palestrante",
+				"expecialidade": "Expecialidade",
 				"avatar": "img/avatar.jpg",
-				"description": "Sou dev transante"
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ligula sed sapien rutrum tincidunt. Donec in massa gravida, gravida neque at, dapibus quam. Cras lobortis mattis enim vitae sagittis. Quisque vehicula eget tellus a lobortis. Nam nunc nisi, elementum non mauris quis, porta tempor leo. Nulla vehicula eros eleifend elit suscipit pretium. In laoreet ornare risus sit amet pretium."
 			},
 			{
-				"name": "Pedro Polisenso - 3",
-				"expecialidade": "Polisysyem",
+				"name": "Nome do Palestrante",
+				"expecialidade": "Expecialidade",
 				"avatar": "img/avatar.jpg",
-				"description": "Sou dev transante"
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ligula sed sapien rutrum tincidunt. Donec in massa gravida, gravida neque at, dapibus quam. Cras lobortis mattis enim vitae sagittis. Quisque vehicula eget tellus a lobortis. Nam nunc nisi, elementum non mauris quis, porta tempor leo. Nulla vehicula eros eleifend elit suscipit pretium. In laoreet ornare risus sit amet pretium."
 			},
 			{
-				"name": "Pedro Polisenso - 4",
-				"expecialidade": "Polisysyem",
+				"name": "Nome do Palestrante",
+				"expecialidade": "Expecialidade",
 				"avatar": "img/avatar.jpg",
-				"description": "Sou dev transante"
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum ligula sed sapien rutrum tincidunt. Donec in massa gravida, gravida neque at, dapibus quam. Cras lobortis mattis enim vitae sagittis. Quisque vehicula eget tellus a lobortis. Nam nunc nisi, elementum non mauris quis, porta tempor leo. Nulla vehicula eros eleifend elit suscipit pretium. In laoreet ornare risus sit amet pretium."
 			}
 		],
 		"patrocinadores": {
