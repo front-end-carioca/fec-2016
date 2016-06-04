@@ -12,6 +12,7 @@ import GuiaDeSobrevivencia from './containers/GuiaDeSobrevivenciaContainer';
 import Contato from './containers/ContatoContainer';
 
 
+// <Contato name={'contato'} {...props} />
 const App = (props) =>
   <div>
     <Menu {...props} />
@@ -24,7 +25,6 @@ const App = (props) =>
     <Subscribe name={'subscribe'} {...props} />
     <Local name={'local'} {...props} />
     <GuiaDeSobrevivencia name={'guia-de-sobrevivencia'} {...props} />
-    <Contato name={'contato'} {...props} />
   </div>;
 
 export default App;

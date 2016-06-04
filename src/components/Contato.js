@@ -9,9 +9,7 @@ class Contato extends Component {
     const {name, children} = this.props;
     return (
       <section className="section" id={name}>
-        <div style={{height: '700px', background: `#F0F`}}>
-        </div>
-        {children}
+        <h2 className="section-title">Contato</h2>
       </section>
     );
   }

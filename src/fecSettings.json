@@ -138,11 +138,22 @@
           "label": "Há 5 linhas dispoíveis de ônibus",
           "distancia": "",
           "opcoes": [
-            "linha 200",
-            "linha 201",
-            "linha 202",
-            "linha 203",
-            "linha 204"
+            {
+              "title": "linha",
+              "marker":"200"
+            },{
+              "title": "linha",
+              "marker":"201"
+            },{
+              "title": "linha",
+              "marker":"202"
+            },{
+              "title": "linha",
+              "marker":"203"
+            },{
+              "title": "linha",
+              "marker":"204"
+            }
           ],
           "cupom": ""
         }
@@ -152,8 +163,13 @@
           "label": "Deverá saltar na Uruguaiana e seguir a pé tendo duas opções",
           "distancia": "",
           "opcoes": [
-            "Atravesse a Av. Presidente Vargas, siga pela R. Acre até chegar à Praça Mauá / Museu do Amanhã",
-            "Siga pela Av. Presidente Vargas no sengido da Igreja da Candelária, dobre à esquerda na Av. Rio Branco e siga em frente até chegar à Praça Mauá / Museu do Amanhã"
+            {
+              "title": "Atravesse a Av. Presidente Vargas, siga pela R. Acre até chegar à Praça Mauá / Museu do Amanhã",
+              "marker":"1"
+            },{
+              "title": "Siga pela Av. Presidente Vargas no sengido da Igreja da Candelária, dobre à esquerda na Av. Rio Branco e siga em frente até chegar à Praça Mauá / Museu do Amanhã",
+              "marker":"2"
+            }
           ],
           "cupom": ""
         }
@@ -163,29 +179,29 @@
     "type": "ACOMODAÇÕES",
     "instrucoes": [
       {
-        "title": "Hotel",
+        "title": "Nome do Hotel",
         "infos": {
-          "label": "Hotel",
+          "label": "",
           "distancia": "8km do evento",
           "opcoes": [],
           "cupom": ""
         }
       },{
-        "title": "Hotel",
+        "title": "Nome do Hotel",
         "infos": {
-          "label": "Hotel",
+          "label": "",
           "distancia": "8km do evento",
           "opcoes": [],
           "cupom": ""
         }
       },{
-        "title": "Hotel",
+        "title": "Nome do Hotel",
         "infos": {
-          "label": "Hotel",
+          "label": "",
           "distancia": "8km do evento",
           "opcoes": [
-            "End: Av. Atlantica, 2600 - Copacabana, Rio de Janeiro - RJ, 22041-001",
-            "Telefone: (21) 2545-6500"
+            { "title": "End: Av. Atlantica, 2600 - Copacabana, Rio de Janeiro - RJ, 22041-001" },
+            { "title": "Telefone: (21) 2545-6500" }
           ],
           "cupom": "FECDESCONTO"
         }

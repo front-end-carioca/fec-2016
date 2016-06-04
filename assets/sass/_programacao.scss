@@ -3,26 +3,16 @@
   color: #fff;
 
   .nav-tabs {
-    border:none;
-    margin-bottom: 20px;
-    text-align: center;
     >li {
-      float: none;
-      display: inline-block;
-      margin-bottom: 0;
       a {
-        border: none;
         color: #00B29E;
-        font-size: 1.5em;
       }
       > a:focus,
       > a:hover,
       &.active>a,
       &.active>a:focus,
       &.active>a:hover {
-        border: none;
         border-bottom: 1px solid #00B29E;
-        background: transparent;
         color: #00B29E;
       }
     }
@@ -30,29 +20,7 @@
   .tab-pane {
     .card {
       background: #00B29E;
-      box-sizing: border-box;
-      border-radius: 10px;
-      padding: 10px 20px;
       min-height: 190px;
-      margin-bottom: 30px;
-
-      .schedule {
-        margin: 10px 0 5px;
-        font-size: 1.3em;
-      }
-      .title {
-        font-size: 1.5em;
-        font-weight: 400;
-        font-family: Roboto;
-      }
-      .panelist {
-        font-size: 1.15em;
-        font-family: Roboto;
-        font-weight: 300;
-        strong {
-          font-weight: 400;
-        }
-      }
     }
   }
 }
