@@ -48,6 +48,78 @@ body {
   }
 }
 
+.nav-tabs {
+  border:none;
+  margin-bottom: 20px;
+  text-align: center;
+  >li {
+    float: none;
+    display: inline-block;
+    margin-bottom: 0;
+    a {
+      border: none;
+      font-size: 1.5em;
+    }
+    > a:focus,
+    > a:hover,
+    &.active>a,
+    &.active>a:focus,
+    &.active>a:hover {
+      border: none;
+      background: transparent;
+    }
+  }
+}
+
+.tab-pane {
+  .card {
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 20px;
+    min-height: 300px;
+    margin-bottom: 30px;
+
+    .schedule {
+      margin: 10px 0 5px;
+      font-size: 1.3em;
+    }
+    .title {
+      font-size: 1.5em;
+      font-weight: 400;
+      font-family: Roboto;
+    }
+    .panelist {
+      font-size: 1.15em;
+      font-family: Roboto;
+      font-weight: 300;
+      strong {
+        font-weight: 400;
+      }
+    }
+
+    .list {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        line-height: 2em;
+        margin-bottom: 10px;
+
+        .marker {
+          margin-right: 5px;
+          padding: 0 10px;
+          background: #FFCF27;
+          color: #363C44;
+          font-weight: bold;
+          border-radius: 5px;
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+
 @include respond-to('basic') {
 
 }
