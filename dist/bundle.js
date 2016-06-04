@@ -65,7 +65,7 @@
 	
 	var _AppContainer2 = _interopRequireDefault(_AppContainer);
 	
-	var _Store = __webpack_require__(326);
+	var _Store = __webpack_require__(325);
 	
 	var _Store2 = _interopRequireDefault(_Store);
 	
@@ -21944,12 +21944,13 @@
 	
 	var _GuiaDeSobrevivenciaContainer2 = _interopRequireDefault(_GuiaDeSobrevivenciaContainer);
 	
-	var _ContatoContainer = __webpack_require__(324);
+	var _ContatoContainer = __webpack_require__(323);
 	
 	var _ContatoContainer2 = _interopRequireDefault(_ContatoContainer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <Contato name={'contato'} {...props} />
 	var App = function App(props) {
 	  return _react2.default.createElement(
 	    'div',
@@ -21963,8 +21964,7 @@
 	    _react2.default.createElement(_PatrocinioContainer2.default, _extends({ name: 'patrocinio' }, props)),
 	    _react2.default.createElement(_SubscribeContainer2.default, _extends({ name: 'subscribe' }, props)),
 	    _react2.default.createElement(_LocalContainer2.default, _extends({ name: 'local' }, props)),
-	    _react2.default.createElement(_GuiaDeSobrevivenciaContainer2.default, _extends({ name: 'guia-de-sobrevivencia' }, props)),
-	    _react2.default.createElement(_ContatoContainer2.default, _extends({ name: 'contato' }, props))
+	    _react2.default.createElement(_GuiaDeSobrevivenciaContainer2.default, _extends({ name: 'guia-de-sobrevivencia' }, props))
 	  );
 	};
 	
@@ -30123,9 +30123,25 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Table = __webpack_require__(323);
+	var _Tab = __webpack_require__(295);
 	
-	var _Table2 = _interopRequireDefault(_Table);
+	var _Tab2 = _interopRequireDefault(_Tab);
+	
+	var _Row = __webpack_require__(286);
+	
+	var _Row2 = _interopRequireDefault(_Row);
+	
+	var _Col = __webpack_require__(287);
+	
+	var _Col2 = _interopRequireDefault(_Col);
+	
+	var _Nav = __webpack_require__(259);
+	
+	var _Nav2 = _interopRequireDefault(_Nav);
+	
+	var _NavItem = __webpack_require__(265);
+	
+	var _NavItem2 = _interopRequireDefault(_NavItem);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -30141,67 +30157,114 @@
 	      { className: 'section-title' },
 	      'Guia de Sobrevivência'
 	    ),
-	    guia.map(function (g, gi) {
-	      return _react2.default.createElement(
-	        'div',
-	        { key: gi },
+	    _react2.default.createElement(
+	      _Tab2.default.Container,
+	      { id: 'tabs-guia-de-sobrevivencia', defaultActiveKey: 'tab0' },
+	      _react2.default.createElement(
+	        _Row2.default,
+	        { className: 'clearfix' },
 	        _react2.default.createElement(
-	          'h3',
-	          { className: 'section-subtitle' },
-	          g.type
+	          _Col2.default,
+	          { sm: 12 },
+	          _react2.default.createElement(
+	            _Nav2.default,
+	            { bsStyle: 'tabs' },
+	            guia.map(function (g, gi) {
+	              return _react2.default.createElement(
+	                _NavItem2.default,
+	                { key: gi, eventKey: 'tab' + gi },
+	                g.type
+	              );
+	            })
+	          )
 	        ),
 	        _react2.default.createElement(
-	          _Table2.default,
-	          null,
+	          _Col2.default,
+	          { sm: 12 },
 	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            g.instrucoes.map(function (inst, i) {
+	            _Tab2.default.Content,
+	            { animation: true },
+	            guia.map(function (g, gi) {
 	              return _react2.default.createElement(
-	                'tr',
-	                { key: i },
+	                _Tab2.default.Pane,
+	                { key: gi, eventKey: 'tab' + gi },
 	                _react2.default.createElement(
-	                  'th',
-	                  { width: '90px' },
-	                  inst.title
-	                ),
-	                _react2.default.createElement(
-	                  'td',
+	                  _Row2.default,
 	                  null,
-	                  _react2.default.createElement(
-	                    'h4',
-	                    null,
-	                    inst.infos.label
-	                  ),
-	                  inst.infos.distancia && _react2.default.createElement(
-	                    'span',
-	                    null,
-	                    inst.infos.distancia
-	                  ),
-	                  inst.infos.opcoes.length > 0 && _react2.default.createElement(
-	                    'ul',
-	                    null,
-	                    inst.infos.opcoes.map(function (o, oi) {
-	                      return _react2.default.createElement(
-	                        'li',
-	                        { key: oi },
-	                        o
-	                      );
-	                    })
-	                  ),
-	                  inst.infos.cupom && _react2.default.createElement(
-	                    'span',
-	                    null,
-	                    'Cupom: ',
-	                    inst.infos.cupom
-	                  )
+	                  g.instrucoes.map(function (inst, i) {
+	                    return _react2.default.createElement(
+	                      _Col2.default,
+	                      { key: i, sm: 4 },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'card' },
+	                        _react2.default.createElement(
+	                          'p',
+	                          { className: 'title' },
+	                          inst.title
+	                        ),
+	                        _react2.default.createElement(
+	                          'p',
+	                          { className: 'schedule' },
+	                          inst.infos.label
+	                        ),
+	                        inst.infos.distancia && _react2.default.createElement(
+	                          'p',
+	                          { className: 'panelist' },
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            inst.infos.distancia
+	                          )
+	                        ),
+	                        inst.infos.opcoes.length > 0 && _react2.default.createElement(
+	                          'ul',
+	                          { className: 'list' },
+	                          inst.infos.opcoes.map(function (o, oi) {
+	                            return _react2.default.createElement(
+	                              'li',
+	                              { key: oi },
+	                              o.marker && _react2.default.createElement(
+	                                'span',
+	                                { className: 'marker' },
+	                                o.marker
+	                              ),
+	                              ' ',
+	                              o.title
+	                            );
+	                          })
+	                        ),
+	                        inst.infos.cupom && _react2.default.createElement(
+	                          'span',
+	                          null,
+	                          'Cupom: ',
+	                          inst.infos.cupom
+	                        )
+	                      )
+	                    );
+	                  })
 	                )
 	              );
 	            })
 	          )
+	        ),
+	        _react2.default.createElement(
+	          _Col2.default,
+	          { mdHidden: true, lgHidden: true, sm: 12 },
+	          _react2.default.createElement(
+	            _Nav2.default,
+	            { bsStyle: 'tabs' },
+	            guia.map(function (g, gi) {
+	              return _react2.default.createElement(
+	                _NavItem2.default,
+	                { key: gi, eventKey: 'tab' + gi },
+	                g.type
+	              );
+	            })
+	          )
 	        )
-	      );
-	    })
+	      )
+	    )
 	  );
 	};
 	
@@ -30209,72 +30272,6 @@
 
 /***/ },
 /* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _extends = __webpack_require__(200)['default'];
-	
-	var _interopRequireDefault = __webpack_require__(216)['default'];
-	
-	exports.__esModule = true;
-	
-	var _react = __webpack_require__(3);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _classnames = __webpack_require__(217);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	var Table = _react2['default'].createClass({
-	  displayName: 'Table',
-	
-	  propTypes: {
-	    striped: _react2['default'].PropTypes.bool,
-	    bordered: _react2['default'].PropTypes.bool,
-	    condensed: _react2['default'].PropTypes.bool,
-	    hover: _react2['default'].PropTypes.bool,
-	    responsive: _react2['default'].PropTypes.bool
-	  },
-	
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      bordered: false,
-	      condensed: false,
-	      hover: false,
-	      responsive: false,
-	      striped: false
-	    };
-	  },
-	
-	  render: function render() {
-	    var classes = {
-	      'table': true,
-	      'table-striped': this.props.striped,
-	      'table-bordered': this.props.bordered,
-	      'table-condensed': this.props.condensed,
-	      'table-hover': this.props.hover
-	    };
-	    var table = _react2['default'].createElement(
-	      'table',
-	      _extends({}, this.props, { className: _classnames2['default'](this.props.className, classes) }),
-	      this.props.children
-	    );
-	
-	    return this.props.responsive ? _react2['default'].createElement(
-	      'div',
-	      { className: 'table-responsive' },
-	      table
-	    ) : table;
-	  }
-	});
-	
-	exports['default'] = Table;
-	module.exports = exports['default'];
-
-/***/ },
-/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30289,7 +30286,7 @@
 	
 	var _reactRedux = __webpack_require__(169);
 	
-	var _Contato = __webpack_require__(325);
+	var _Contato = __webpack_require__(324);
 	
 	var _Contato2 = _interopRequireDefault(_Contato);
 	
@@ -30298,10 +30295,10 @@
 	exports.default = (0, _reactRedux.connect)()(_Contato2.default);
 
 /***/ },
-/* 325 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -30331,17 +30328,20 @@
 	  }
 	
 	  _createClass(Contato, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      var _props = this.props;
 	      var name = _props.name;
 	      var children = _props.children;
 	
 	      return _react2.default.createElement(
-	        'section',
-	        { className: 'section', id: name },
-	        _react2.default.createElement('div', { style: { height: '700px', background: '#F0F' } }),
-	        children
+	        "section",
+	        { className: "section", id: name },
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "section-title" },
+	          "Contato"
+	        )
 	      );
 	    }
 	  }]);
@@ -30352,6 +30352,28 @@
 	;
 	
 	exports.default = Contato;
+
+/***/ },
+/* 325 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _redux = __webpack_require__(176);
+	
+	var _reducers = __webpack_require__(326);
+	
+	var _reducers2 = _interopRequireDefault(_reducers);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var store = (0, _redux.createStore)(_reducers2.default);
+	
+	exports.default = store;
 
 /***/ },
 /* 326 */
@@ -30365,29 +30387,7 @@
 	
 	var _redux = __webpack_require__(176);
 	
-	var _reducers = __webpack_require__(327);
-	
-	var _reducers2 = _interopRequireDefault(_reducers);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var store = (0, _redux.createStore)(_reducers2.default);
-	
-	exports.default = store;
-
-/***/ },
-/* 327 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _redux = __webpack_require__(176);
-	
-	var _sections = __webpack_require__(328);
+	var _sections = __webpack_require__(327);
 	
 	var _sections2 = _interopRequireDefault(_sections);
 	
@@ -30400,7 +30400,7 @@
 	exports.default = FecApp;
 
 /***/ },
-/* 328 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30411,7 +30411,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _fecSettings = __webpack_require__(329);
+	var _fecSettings = __webpack_require__(328);
 	
 	var _fecSettings2 = _interopRequireDefault(_fecSettings);
 	
@@ -30462,7 +30462,7 @@
 	exports.default = sections;
 
 /***/ },
-/* 329 */
+/* 328 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -30667,11 +30667,26 @@
 							"label": "Há 5 linhas dispoíveis de ônibus",
 							"distancia": "",
 							"opcoes": [
-								"linha 200",
-								"linha 201",
-								"linha 202",
-								"linha 203",
-								"linha 204"
+								{
+									"title": "linha",
+									"marker": "200"
+								},
+								{
+									"title": "linha",
+									"marker": "201"
+								},
+								{
+									"title": "linha",
+									"marker": "202"
+								},
+								{
+									"title": "linha",
+									"marker": "203"
+								},
+								{
+									"title": "linha",
+									"marker": "204"
+								}
 							],
 							"cupom": ""
 						}
@@ -30682,8 +30697,14 @@
 							"label": "Deverá saltar na Uruguaiana e seguir a pé tendo duas opções",
 							"distancia": "",
 							"opcoes": [
-								"Atravesse a Av. Presidente Vargas, siga pela R. Acre até chegar à Praça Mauá / Museu do Amanhã",
-								"Siga pela Av. Presidente Vargas no sengido da Igreja da Candelária, dobre à esquerda na Av. Rio Branco e siga em frente até chegar à Praça Mauá / Museu do Amanhã"
+								{
+									"title": "Atravesse a Av. Presidente Vargas, siga pela R. Acre até chegar à Praça Mauá / Museu do Amanhã",
+									"marker": "1"
+								},
+								{
+									"title": "Siga pela Av. Presidente Vargas no sengido da Igreja da Candelária, dobre à esquerda na Av. Rio Branco e siga em frente até chegar à Praça Mauá / Museu do Amanhã",
+									"marker": "2"
+								}
 							],
 							"cupom": ""
 						}
@@ -30694,31 +30715,35 @@
 				"type": "ACOMODAÇÕES",
 				"instrucoes": [
 					{
-						"title": "Hotel",
+						"title": "Nome do Hotel",
 						"infos": {
-							"label": "Hotel",
+							"label": "",
 							"distancia": "8km do evento",
 							"opcoes": [],
 							"cupom": ""
 						}
 					},
 					{
-						"title": "Hotel",
+						"title": "Nome do Hotel",
 						"infos": {
-							"label": "Hotel",
+							"label": "",
 							"distancia": "8km do evento",
 							"opcoes": [],
 							"cupom": ""
 						}
 					},
 					{
-						"title": "Hotel",
+						"title": "Nome do Hotel",
 						"infos": {
-							"label": "Hotel",
+							"label": "",
 							"distancia": "8km do evento",
 							"opcoes": [
-								"End: Av. Atlantica, 2600 - Copacabana, Rio de Janeiro - RJ, 22041-001",
-								"Telefone: (21) 2545-6500"
+								{
+									"title": "End: Av. Atlantica, 2600 - Copacabana, Rio de Janeiro - RJ, 22041-001"
+								},
+								{
+									"title": "Telefone: (21) 2545-6500"
+								}
 							],
 							"cupom": "FECDESCONTO"
 						}
