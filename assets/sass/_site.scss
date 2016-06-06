@@ -41,10 +41,7 @@ body {
   &-subtitle {
     text-align: center;
     font-size: 1.2em;
-    margin-bottom: 50px;
-    span {
-      // border-bottom: 1px solid #FFCF27;
-    }
+    margin-bottom: 25px;
   }
 }
 
@@ -58,7 +55,8 @@ body {
     margin-bottom: 0;
     a {
       border: none;
-      font-size: 1.5em;
+      font-size: 1.15em;
+      padding: 5px;
     }
     > a:focus,
     > a:hover,
@@ -124,6 +122,13 @@ body {
 
 }
 @include respond-to('md') {
+
+  .section {
+    &-subtitle {
+      margin-bottom: 50px;
+    }
+  }
+
   .container {
     padding: 0 15px;
     margin: 0 auto;
