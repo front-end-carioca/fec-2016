@@ -26,11 +26,11 @@ class Home extends Component {
     const {styles} = this.state;
     return (
       <header id={name} className="header" style={styles}>
-        <h1 className="title">A MAIOR<br />CONFERÊNCIA WEB</h1>
-        <h3 className="subtitle">Rio de Janeiro<br />22 DE OUTUBRO 2016</h3>
+        <h1 className="title">A maior conferência web<br />do Rio de Janeiro</h1>
+        <h3 className="subtitle">Rua Candelária, N˚ 9 - subsolo - Rio de Janeiro<br />22 de Outubro 2016 - às 08h</h3>
         <div className="wrap-buttons">
-          <Button href="http://even.tc/front-end-carioca-2016" target="_blank" bsStyle="primary">INSCREVA-SE</Button>
-          <Button href="mailto:contato@frontendcarioca.com.br?subject=PATROCINIO: FRONT-END CARIOCA 2016" target="_blank">PATROCINE</Button>
+          <Button href="http://even.tc/front-end-carioca-2016" target="_blank" bsStyle="primary">Inscreva-se</Button>
+          <Button href="mailto:contato@frontendcarioca.com.br?subject=PATROCINIO: FRONT-END CARIOCA 2016" target="_blank">Seja um Patrocinador</Button>
         </div>
       </header>
     );

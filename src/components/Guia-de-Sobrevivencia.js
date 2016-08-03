@@ -28,7 +28,8 @@ const GuiaDeSobrevivencia = ({name, guia}) => {
                       <Col key={i} sm={4}>
                         <div className="card">
                           <p className="title">{inst.title}</p>
-                          <p className="schedule">{inst.infos.label}</p>
+                          <p className="schedule">{inst.infos.sdu}</p>
+                          <p className="schedule">{inst.infos.gig}</p>
                           { inst.infos.distancia &&
                             <p className="panelist">
                               <strong>{inst.infos.distancia}</strong>
@@ -42,6 +43,9 @@ const GuiaDeSobrevivencia = ({name, guia}) => {
                             </ul>}
                           { inst.infos.cupom &&
                             <span>Cupom: {inst.infos.cupom}</span>
+                          }
+                          { inst.infos.link &&
+                            <a href={inst.infos.link} target="_blank">Site: {inst.infos.site}</a>
                           }
                         </div>
                       </Col>

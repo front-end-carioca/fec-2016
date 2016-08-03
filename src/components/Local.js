@@ -6,8 +6,8 @@ import Marker from "react-google-maps/lib/Marker";
 const Local = ({name}) => {
   const markers = [{
     position: {
-      lat: -23.0046326,
-      lng: -43.3410536,
+      lat: -22.9015537,
+      lng: -43.1770694,
     },
     key: `Local do Evento`,
     defaultAnimation: 2,
@@ -21,9 +21,9 @@ const Local = ({name}) => {
         googleMapElement={
           <GoogleMap
             ref={(map) => console.log(map)}
-            defaultZoom={17}
+            defaultZoom={16}
             disableDefaultUI={true}
-            defaultCenter={{ lat: -23.0046326, lng: -43.3410536 }}>
+            defaultCenter={{ lat: -22.9015537, lng: -43.1770694 }}>
             {markers.map((marker, index) => {
               return (
                 <Marker
