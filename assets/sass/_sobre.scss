@@ -19,6 +19,8 @@
     @include flex(1);
     color: #363C44;
     padding-right: 20px;
+    margin: auto;
+    width: 500px;
     .title {
       font-size: 3em;
       font-weight: 400;
@@ -26,7 +28,8 @@
     p {
       text-align: left;
       font-size: 1.2em;
-      line-height: 1.5em
+      line-height: 1.5em;
+      margin-bottom: 30px;
     }
   }
 }
