@@ -37,6 +37,7 @@
 @include respond-to('md') {
   .header {
     padding: 195px 0;
+    max-height: 400px;
     .title{
       font-size: 50px;
     }
