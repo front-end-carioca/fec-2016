@@ -23,7 +23,7 @@ module.exports = `<!doctype html>
     <div id="app">
       <%- html %>
     </div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPEH6mfQpteKni2Yy6jD71vA6kXsIKeKU&v=3.exp&libraries=geometry,drawing,places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGX56IUGBK7pu9QFVKMxETLGcNsJ3aEmY&v=3.exp&libraries=geometry,drawing,places"></script>
     <% for (var chunk in assets) { -%>
     <script src="<%= assets[chunk] %>"></script>
     <% } -%>
