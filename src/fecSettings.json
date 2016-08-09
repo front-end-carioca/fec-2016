@@ -72,6 +72,11 @@
     "expecialidade": "Web Developer na TUUT",
     "avatar": "img/cezar.jpg",
     "description":""
+  },{
+    "name": "Asael Arenas",
+    "expecialidade": "Community Manager da Toptal na América Latina",
+    "avatar": "img/asael.jpg",
+    "description":"Community Manager da Toptal na América Latina. Mais de 15 anos de experiência em ciência da informação e mídia na Internet. Comprometido em usar tecnologia para desenvolver aplicações úteis e atrativas para usuários, e eficiente para os clientes; para o benefício do comércio, pesquisa, entretenimento e educação."
   }],
   "patrocinadores": {
     "Platinum": [{"name":"Toptal", "image": "toptal.png"}],
@@ -81,7 +86,9 @@
     "Bronze": [],
     "Apoio": [
       {"name": "Eventick", "image": "eventick.png"},
-      {"name": "Braziljs", "image": "braziljs.png"}
+      {"name": "Braziljs", "image": "braziljs.png"},
+      {"name": "vivareal", "image": "vivareal.png"},
+      {"name": "acrio", "image": "acrio.jpg"}
     ]
   },
   "programacao": [
@@ -164,10 +171,10 @@
           "descricao": "Você já ouviu falar de Elm? uma nova tecnologia que vem ganhando seu espaço no mundo Front-end."
       },{
           "horario": "15:10 - 15:55",
-          "titulo": "Definição em Breve",
-          "palestrante": "A definir",
+          "titulo": "Trabalho remoto virou realidade",
+          "palestrante": "Asael Arenas",
           "especialidade": "",
-          "descricao": "Uma breve descrição da palestra."
+          "descricao": "O trabalho mudou. As tendências adotadas na época da Revolução Industrial deveriam ser revistas hoje em dia."
       },{
           "horario": "16:00 - 16:30",
           "titulo": "Coffee-Break & Networking",
