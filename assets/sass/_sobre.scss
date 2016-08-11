@@ -4,8 +4,7 @@
   color: #fff;
   align-items: center;
   text-align: center;
-  // font-family: Roboto;
-  max-height: 600px;
+  font-family: Roboto;
 
   .logo {
     @include flex(1);

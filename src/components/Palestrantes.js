@@ -15,7 +15,7 @@ const Palestrantes = ({name, palestrantes, toggleDetails}) =>
 
         return <Col key={i} xs={12} sm={6} md={4}>
           <div className="palestrante">
-            <img className="avatar" src={avatar} height="350"/>
+            <img className="avatar" src={avatar}/>
             {(typeof window !== 'undefined' && 'ontouchstart' in window ?
               <button className="more-details" onClick={toggleDetails.bind(this, i)}>
                 <i className="material-icons">more_vert</i>
