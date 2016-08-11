@@ -1,0 +1,313 @@
+{
+  "sectionSelected": "header",
+  "items": [{
+    "name": "header",
+    "label": "INÍCIO"
+  },{
+    "name": "sobre",
+    "label": "SOBRE"
+  },{
+    "name": "palestrantes",
+    "label": "PALESTRANTES"
+  },{
+    "name": "programacao",
+    "label": "PROGRAMAÇÃO"
+  },{
+    "name": "patrocinio",
+    "label": "PATROCÍNIO"
+  },{
+    "name": "local",
+    "label": "LOCAL"
+  },{
+    "name": "guia-de-sobrevivencia",
+    "label": "GUIA DE SOBREVIVÊNCIA"
+  }],
+  "palestrantes": [{
+    "name": "Jéssica Pereira",
+    "expecialidade": "UX/UI SkyHub",
+    "avatar": "img/jessica.jpg",
+    "description":"Atualmente estou trabalhando como a principal UX na SkyHub criando e planejando as propostas futuras que a empresa deseja aplicar no mercado aos usuários."
+  },{
+    "name": "Lucas Reis",
+    "expecialidade": "Lead Front-end B2W Digital Inc",
+    "avatar": "img/lucas.jpg",
+    "description":"Atualmente sou o Líder do time de Checkout Frontend da B2W. Já circulei por vários mundos, da Economia à Consultoria, da Matemática à Música. Tenho como missão sempre resolver problemas e dividir conhecimento por onde passo!"
+  },{
+    "name": "Matheus Lima",
+    "expecialidade": "Lead JS na Concrete Solutions",
+    "avatar": "img/matheus.jpg",
+    "description":"Atualmente é o JavaScript Lead Developer na Concrete Solutions. Criador do JSCasts, escreve sobre Programação Funcional e JavaScript em seu blog e organiza uma newsletter semanal de JavaScript."
+  },{
+    "name": "Guilherme Bruzzi",
+    "expecialidade": "Developer na Globo.com",
+    "avatar": "img/guilherme.jpg",
+    "description":"Formado em Ciência da Computação na UFRJ e fiz minha monografia sobre Lean Startup. Durante a faculdade participei por 3 anos da empresa júnior EJCM na UFRJ. Estou trabalhando já há mais de 4 anos na Globo.com (passando pelo Globoesporte e Home), atualmente como desenvolvedor no time de mobile apps, onde usamos React Native no dia a dia."
+  },{
+    "name": "William Grasel",
+    "expecialidade": "Developer na Viva Real SP",
+    "avatar": "img/william.jpg",
+    "description":"Programador apaixonado, amante de tecnologia, mais de 10 anos como web developer, do back ao front! Praticante de artes marciais, meditante, ciclista, filosofo de mesa de bar e acredita de coração que é possível fazer um mundo melhor."
+  },{
+    "name": "Jonathan Bijos",
+    "expecialidade": "Developer na PiggyPeg",
+    "avatar": "img/jhonatan.jpg",
+    "description":"Desenvolvedor Javascript e iOS no PiggyPeg. Entusiasta de programação funcional."
+  },{
+    "name": "Caio Gondim",
+    "expecialidade": "Booking.com",
+    "avatar": "img/caio.jpg",
+    "description":"Trabalho como JavaScript Developer na Booking.com há um tempo focado na criação de novos produtos e features da aplicação."
+  },{
+    "name": "Sergio Lopes",
+    "expecialidade": "Instrutor na Caelum",
+    "avatar": "img/sergio.jpg",
+    "description":"Instrutor e desenvolvedor no Alura e na Caelum, onde dou aula nos cursos de web design e cursos java. Coordenador da unidade SP da Caelum, Palestrante em diversos eventos Autor dos livros: A Web Mobile, Aplicações mobile híbridas com Cordova e PhoneGap, Editor do livro Coletânea Front-end, Co-autor do livro Introdução a arquitetura e design Java, Co-fundador do MusicDot, cursos online de teclado e piano."
+  },{
+    "name": "Natalia Bruno",
+    "expecialidade": "Lead Web Developer na TUUT",
+    "avatar": "img/natalia.jpg",
+    "description":"Lead Web Developer e profissional generalista com experiência em empresas de diversas áreas de negócio."
+  },{
+    "name": "Cezar Augusto",
+    "expecialidade": "Web Developer na TUUT",
+    "avatar": "img/cezar.jpg",
+    "description":""
+  },{
+    "name": "Asael Arenas",
+    "expecialidade": "Community Manager da Toptal na América Latina",
+    "avatar": "img/asael.jpg",
+    "description":"Community Manager da Toptal na América Latina. Mais de 15 anos de experiência em ciência da informação e mídia na Internet. Comprometido em usar tecnologia para desenvolver aplicações úteis e atrativas para usuários, e eficiente para os clientes; para o benefício do comércio, pesquisa, entretenimento e educação."
+  }],
+  "patrocinadores": {
+    "Platinum": [{"name":"Toptal", "image": "toptal.png"}],
+    "Vip": [{"name": "B2W Digital", "image": "b2w.png" }],
+    "Ouro": [],
+    "Prata": [{"name": "Senac RJ", "image": "senac.jpg" }],
+    "Bronze": [],
+    "Apoio": [
+      {"name": "Eventick", "image": "eventick.png"},
+      {"name": "Braziljs", "image": "braziljs.png"},
+      {"name": "vivareal", "image": "vivareal.png"},
+      {"name": "acrio", "image": "acrio.jpg"}
+    ]
+  },
+  "programacao": [
+    {
+      "periodo": "Manhã",
+      "atividades": [{
+          "horario": "8:00 - 9:00",
+          "titulo": "Credenciamento & Coffee-Break",
+          "palestrante": "Chegue cedo!",
+          "especialidade": "",
+          "descricao": "Tenha em mãos documento com foto para facilitar sua identificação e a entrada no evento. E aos estudantes, um comprovante de inscrição atual."
+      },{
+          "horario": "09:00 - 09:10",
+          "titulo": "Apresentação",
+          "palestrante": "Organizadores",
+          "especialidade": "",
+          "descricao": "Uma pequena introdução ao evento e passando as todas as dicas do dia que vamos precisar durante o evento."
+      },{
+          "horario": "09:10 - 09:50",
+          "titulo": "React Native",
+          "palestrante": "Guilherme Bruzzi",
+          "especialidade": "",
+          "descricao": "Um resumo da arquitetura do React Native e das escolhas que fizemos para as novas apps do G1, e Gshow usando essa tecnologia."
+      },{
+          "horario": "09:55 - 10:10",
+          "titulo": "Os grandes desafios de um UX nas startups",
+          "palestrante": "Jéssica Pereira",
+          "especialidade": "",
+          "descricao": "Uma experiência de um UX que teve a missão de ser influente nos projetos da empresa."
+      },{
+          "horario": "10:15 - 10:55",
+          "titulo": "JS Funcional: Diminuindo dor de Cabeça no Front-end",
+          "palestrante": "Lucas Reis",
+          "especialidade": "",
+          "descricao": "Vou mostrar as vantagens da Programação Funcional que vai diminuir sua dor de cabeça no Front-end"
+      },{
+          "horario": "11:00 - 11:15",
+          "titulo": "Developer to Developer & Company to Developer",
+          "palestrante": "Nathalia Bruno",
+          "especialidade": "",
+          "descricao": "O que os desenvolvedores e as empresas esperam dos desenvolvedores?"
+      },{
+          "horario": "11:20 - 11:30",
+          "titulo": "Sorteios e Desafios",
+          "palestrante": "Apresentador",
+          "especialidade": "",
+          "descricao": "Esse é o momento que separamos para premiar os participantes presentes com sorteios e desafios."
+      },{
+          "horario": "11:30 - 12:10",
+          "titulo": "Aplicações isomorphic e escaláveis",
+          "palestrante": "Carlos Baptista",
+          "especialidade": "",
+          "descricao": "A palestrante fala de como podemos criar uma aplicação escalável e de alta performance."
+      },{
+          "horario": "12:10 - 13:40",
+          "titulo": "Hora de Almoçar, galera!",
+          "palestrante": "",
+          "especialidade": "",
+          "descricao": "Aproveite esse momento para conhcer novas pessoas, trocar novas experiências, conhecer novas oportnidades. Mas não esqueçam do horário, pois a volta será pontual."
+      }]
+    },{
+      "periodo": "Tarde",
+      "atividades": [{
+          "horario": "13:45 - 14:00",
+          "titulo": "Vue.js Uma alternativa elegante",
+          "palestrante": "Jonathan Pereira",
+          "especialidade": "",
+          "descricao": "A talk vai se resumir em comparar Vue.js com ReactJS e AngularJS, mostrando exemplos com Redux."
+      },{
+          "horario": "14:05 - 14:45",
+          "titulo": "AngularJS 2 & TypeScript",
+          "palestrante": "William Grasel",
+          "especialidade": "",
+          "descricao": "Conheça o AngularJS 2 que está sensacional, mais performático e sincronizado com as ultimas tecnologias."
+      },{
+          "horario": "14:50 - 15:05",
+          "titulo": "Elm: Front-End do Jeito Certo",
+          "palestrante": "Matheus Lima",
+          "especialidade": "",
+          "descricao": "Você já ouviu falar de Elm? uma nova tecnologia que vem ganhando seu espaço no mundo Front-end."
+      },{
+          "horario": "15:10 - 15:55",
+          "titulo": "Trabalho remoto virou realidade",
+          "palestrante": "Asael Arenas",
+          "especialidade": "",
+          "descricao": "O trabalho mudou. As tendências adotadas na época da Revolução Industrial deveriam ser revistas hoje em dia."
+      },{
+          "horario": "16:00 - 16:30",
+          "titulo": "Coffee-Break & Networking",
+          "palestrante": "",
+          "especialidade": "",
+          "descricao": "Aproveite o momento para fazer Networking com os outros participantes e dar uma descontraida."
+      },{
+          "horario": "16:30 - 17:10",
+          "titulo": "Web Perfornamce",
+          "palestrante": "Sergio Lopes",
+          "especialidade": "",
+          "descricao": "A palestra mostra algumas dicas a serem aplicadas no dia a dia que influenciam na performance de seu app."
+      },{
+          "horario": "17:15 - 17:30",
+          "titulo": "JS, o quanto você conhece?",
+          "palestrante": "Cezar Augusto",
+          "especialidade": "",
+          "descricao": "Você conhece bem JavaScript? E se eu fizesse algumas demonstrações importantes sobre ele para sua segurança."
+      },{
+          "horario": "17:35 - 18:15",
+          "titulo": "Async/await com JavaScript",
+          "palestrante": "Caio Godim",
+          "especialidade": "",
+          "descricao": "O Objetivo da palestra será comentar e desmistificar o uso de algumas novas especificações de ES6/ES7."
+      },{
+          "horario": "18:20 - 18:30",
+          "titulo": "Encerramento",
+          "palestrante": "Apresentador",
+          "especialidade": "",
+          "descricao": "Faremos o encerramento do evento com a foto classica e a participação de todos vocês."
+      }]
+    }
+  ],
+  "guia": [{
+    "type": "COMO CHEGAR",
+    "instrucoes": [
+      {
+        "title": "Aeroportos",
+        "infos": {
+          "sdu": "- Santos Dumont (SDU) pegar os ônibus 118 ou 105 ou VLT e soltar no ponto da candelária: 12 min e R$ 3,80 e a pé 21 min",
+          "gig": "- Galeão (GIG) pegar os ônibus 328 ou 760D e soltar na saida da ilha (Av. Brasil) e pegar o 396 e soltar na candelária: 43 min e R$ 3,80",
+          "distancia": "",
+          "opcoes": [],
+          "cupom": ""
+        }
+      },{
+        "title": "Ônibus & Barcas",
+        "infos": {
+          "gig": "Transportes Indicados",
+          "distancia": "",
+          "opcoes": [
+            {
+              "title": "Rio Centro x Candelária",
+              "marker":"348"
+            },{
+              "title": "Rodoviária Novo Rio x Castelo",
+              "marker":"352"
+            },{
+              "title": "Zona Oeste x Largo da Carioca",
+              "marker":"397"
+            },{
+              "title": "Zona Sul x Candelária",
+              "marker":"2329"
+            },{
+              "title": "Niterói x Rio de Janeiro",
+              "marker":"Barcas"
+            }
+          ],
+          "cupom": ""
+        }
+      },{
+        "title": "Metrô & Trem",
+        "infos": {
+          "sdu": "- Metrô: Pela Linha 1 ou Linha 2, deve soltar na Estação Uruguaiana e seguir a pé - Trem: Soltar na Central do Brasil e pegar o metrô sentido a estação de Uruguaiana",
+          "distancia": "",
+          "opcoes": [
+            {
+              "title": "Andar a Av. Presidente Vargas sentido centro e Igreja da Candelária",
+              "marker":"1"
+            },{
+              "title": "Atravessar a Av. Rio Branco e entrar na Segunda direita - Rua Candelária, 9",
+              "marker":"2"
+            }
+          ],
+          "cupom": ""
+        }
+      }
+    ]
+  },{
+    "type": "ACOMODAÇÕES",
+    "instrucoes": [
+      {
+        "title": "Hotel Ibis ao Lado do Santos Dumont",
+        "infos": {
+          "label": "",
+          "distancia": "4km do evento - 22min",
+          "opcoes": [
+            { "title": "Av. Marechal Camara, 280 - Centro, Rio de Janeiro" },
+            { "title": "Telefone: (21) 3506-4500" }
+          ],
+          "cupom": "",
+          "site": "Hotel Ibis Rio de Janeiro",
+          "link": "http://www.ibis.com/pt-br/hotel-5521-ibis-budget-rio-de-janeiro-centro/index.shtml?merchantid=&sourceid=&xtor=-goo-[Hotel%20e%20Local]-S-[%2Bhotel%20%2Bcentro%20%2Brio%20%2Bde%20%2Bjaneiro]"
+        }
+      },
+      {
+        "title": "Windsor Guanabara Hotel",
+        "infos": {
+          "label": "",
+          "distancia": "350m do evento 5min",
+          "opcoes": [
+            { "title": "Av. Pres. Vargas, 392 - Centro, Rio de Janeiro" },
+            { "title": "Telefone: (21) 2195-6000" }
+          ],
+          "cupom": "",
+          "site": "Windsor Guanabara Hotel",
+          "link": "http://www.windsorguanabarahotel.com.br/"
+        }
+      },
+      {
+        "title": "Manga Hostel Rio",
+        "infos": {
+          "label": "",
+          "distancia": "1,7km do evento - 20min",
+          "opcoes": [
+            { "title": "R. do Lavradio, 186 - Centro, Rio de Janeiro" },
+            { "title": "Telefone: (21) 3852-5742" }
+          ],
+          "cupom": "",
+          "site": "Manga Hostel Rio",
+          "link": "http://www.mangahostelrio.com/"
+        }
+      }
+    ]
+  }]
+}
