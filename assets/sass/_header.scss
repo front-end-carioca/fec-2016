@@ -1,9 +1,8 @@
 @include respond-to('basic') {
   .header {
-    background: url(../img/fec_background.png) no-repeat center center;
+    background: #000d1d url(../img/background-header-topo.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
-    font-family: Roboto;
     max-height: 600px;
     padding: 135px 0;
     text-align: center;

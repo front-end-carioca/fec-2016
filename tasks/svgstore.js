@@ -5,18 +5,18 @@ import path from 'path';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 module.exports = () => {
-  var svgs = gulp
+  const svgs = gulp
     .src('assets/svg/*.svg')
     .pipe(svgmin(function getOptions (file) {
-        var prefix = path.basename(file.relative, path.extname(file.relative));
-        return {
-            plugins: [{
-                cleanupIDs: {
-                    prefix: prefix + '-',
-                    minify: true
-                }
-            }]
-        }
+      const prefix = path.basename(file.relative, path.extname(file.relative));
+      return {
+        plugins: [{
+          cleanupIDs: {
+            prefix: prefix + '-',
+            minify: true
+          }
+        }]
+      }
     }))
     .pipe(svgstore({ inlineSvg: true }));
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -15,16 +14,15 @@ if(process.env.NODE_ENV !== 'production') {
   }
 }
 
-const ProviderApp = () => <Provider store={store}>
+const ProviderApp = () => (
+  <Provider store={store}>
     <AppContainer />
-  </Provider>;
+  </Provider>
+);
 
 if (typeof document !== 'undefined') {
   render(ProviderApp(), document.getElementById('app'));
 }
 
 
-module.exports = () => {
-  const AppFactory = React.createFactory(ProviderApp);
-  return AppFactory();
-};
+module.exports = () => React.createFactory(ProviderApp)();

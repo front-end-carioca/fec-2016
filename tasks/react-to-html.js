@@ -20,7 +20,7 @@ module.exports = (callback)  => {
     });
 
     fs.writeFile('./dist/index.html', index, (err, output) =>{
-      if(err) throw new gutil.PluginError("react-to-string", err);
+      if(err) throw new gutil.PluginError('react-to-string', err);
       gutil.log('\u001b[32m[react-to-string]\u001b[39m - output file \u001b[33m"./dist/index.html"\u001b[39m')
       callback();
     });

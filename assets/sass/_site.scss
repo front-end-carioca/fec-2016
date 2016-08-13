@@ -1,11 +1,8 @@
 body {
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 300;
-  a {
-    outline: none;
-  }
 }
-* {font-family: 'Open Sans', sans-serif;}
 
 .svgstore {
   height: 0;
@@ -39,7 +36,7 @@ body {
   overflow: hidden;
   &-title {
     text-align: center;
-    font: 300 26px/36px roboto;
+    font: 300 26px/36px;
   }
   &-subtitle {
     text-align: center;
@@ -87,11 +84,9 @@ body {
     .title {
       font-size: 1.5em;
       font-weight: 400;
-      font-family: Roboto;
     }
     .panelist {
       font-size: 1.15em;
-      font-family: Roboto;
       font-weight: 300;
       strong {
         font-weight: 400;
@@ -121,11 +116,9 @@ body {
 }
 
 
-@include respond-to('basic') {
+@include respond-to('basic') {}
 
-}
 @include respond-to('md') {
-
   .section {
     &-subtitle {
       margin-bottom: 50px;
