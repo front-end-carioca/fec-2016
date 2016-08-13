@@ -1,5 +1,6 @@
 import runSequence from 'run-sequence';
-module.exports = (callback) => runSequence(
+
+module.exports = callback => runSequence(
   'clean',
   'img',
   'sass',
