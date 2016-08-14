@@ -25,57 +25,57 @@
   "palestrantes": [{
     "name": "Jéssica Pereira",
     "expecialidade": "UX/UI SkyHub",
-    "avatar": "img/jessica.jpg",
+    "avatar": "img/avatars/avatar-jessica.jpg",
     "description":"Atualmente estou trabalhando como a principal UX na SkyHub criando e planejando as propostas futuras que a empresa deseja aplicar no mercado aos usuários."
   },{
     "name": "Lucas Reis",
     "expecialidade": "Lead Front-end B2W Digital Inc",
-    "avatar": "img/lucas.jpg",
+    "avatar": "img/avatars/avatar-lucas.jpg",
     "description":"Atualmente sou o Líder do time de Checkout Frontend da B2W. Já circulei por vários mundos, da Economia à Consultoria, da Matemática à Música. Tenho como missão sempre resolver problemas e dividir conhecimento por onde passo!"
   },{
     "name": "Matheus Lima",
     "expecialidade": "Lead JS na Concrete Solutions",
-    "avatar": "img/matheus.jpg",
+    "avatar": "img/avatars/avatar-matheus.jpg",
     "description":"Atualmente é o JavaScript Lead Developer na Concrete Solutions. Criador do JSCasts, escreve sobre Programação Funcional e JavaScript em seu blog e organiza uma newsletter semanal de JavaScript."
   },{
     "name": "Guilherme Bruzzi",
     "expecialidade": "Developer na Globo.com",
-    "avatar": "img/guilherme.jpg",
+    "avatar": "img/avatars/avatar-guilherme.jpg",
     "description":"Formado em Ciência da Computação na UFRJ e fiz minha monografia sobre Lean Startup. Durante a faculdade participei por 3 anos da empresa júnior EJCM na UFRJ. Estou trabalhando já há mais de 4 anos na Globo.com (passando pelo Globoesporte e Home), atualmente como desenvolvedor no time de mobile apps, onde usamos React Native no dia a dia."
   },{
     "name": "William Grasel",
     "expecialidade": "Developer na Viva Real SP",
-    "avatar": "img/william.jpg",
+    "avatar": "img/avatars/avatar-william.jpg",
     "description":"Programador apaixonado, amante de tecnologia, mais de 10 anos como web developer, do back ao front! Praticante de artes marciais, meditante, ciclista, filosofo de mesa de bar e acredita de coração que é possível fazer um mundo melhor."
   },{
     "name": "Jonathan Bijos",
     "expecialidade": "Developer na PiggyPeg",
-    "avatar": "img/jhonatan.jpg",
+    "avatar": "img/avatars/avatar-jhonatan.jpg",
     "description":"Desenvolvedor Javascript e iOS no PiggyPeg. Entusiasta de programação funcional."
   },{
     "name": "Caio Gondim",
     "expecialidade": "Booking.com",
-    "avatar": "img/caio.jpg",
+    "avatar": "img/avatars/avatar-caio.jpg",
     "description":"Trabalho como JavaScript Developer na Booking.com há um tempo focado na criação de novos produtos e features da aplicação."
   },{
     "name": "Sergio Lopes",
     "expecialidade": "Instrutor na Caelum",
-    "avatar": "img/sergio.jpg",
+    "avatar": "img/avatars/avatar-sergio.jpg",
     "description":"Instrutor e desenvolvedor no Alura e na Caelum, onde dou aula nos cursos de web design e cursos java. Coordenador da unidade SP da Caelum, Palestrante em diversos eventos Autor dos livros: A Web Mobile, Aplicações mobile híbridas com Cordova e PhoneGap, Editor do livro Coletânea Front-end, Co-autor do livro Introdução a arquitetura e design Java, Co-fundador do MusicDot, cursos online de teclado e piano."
   },{
     "name": "Natalia Bruno",
     "expecialidade": "Lead Web Developer na TUUT",
-    "avatar": "img/natalia.jpg",
+    "avatar": "img/avatars/avatar-natalia.jpg",
     "description":"Lead Web Developer e profissional generalista com experiência em empresas de diversas áreas de negócio."
   },{
     "name": "Cezar Augusto",
     "expecialidade": "Web Developer na TUUT",
-    "avatar": "img/cezar.jpg",
+    "avatar": "img/avatars/avatar-cezar.jpg",
     "description":""
   },{
     "name": "Asael Arenas",
     "expecialidade": "Community Manager da Toptal na América Latina",
-    "avatar": "img/asael.jpg",
+    "avatar": "img/avatars/avatar-asael.jpg",
     "description":"Community Manager da Toptal na América Latina. Mais de 15 anos de experiência em ciência da informação e mídia na Internet. Comprometido em usar tecnologia para desenvolver aplicações úteis e atrativas para usuários, e eficiente para os clientes; para o benefício do comércio, pesquisa, entretenimento e educação."
   }],
   "patrocinadores": {

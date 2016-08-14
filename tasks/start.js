@@ -1,8 +1,6 @@
 import runSequence from 'run-sequence';
 module.exports = (callback) => runSequence(
-  'img',
-  'sass',
-  'vendor',
+  'dist',
   'server',
   callback
 );
