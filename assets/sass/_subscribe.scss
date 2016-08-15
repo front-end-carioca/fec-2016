@@ -2,7 +2,7 @@
   align-items: center;
   padding: 20px 10px;
   text-align: center;
-  background: #363C44;
+  background: $color-gray;
 
   &:before {
     content: '';
@@ -20,8 +20,9 @@
     vertical-align: middle;
     margin: 0;
     margin-right: 20px;
-    color: #FFF;
     margin-bottom: 10px;
+    color: #FFF;
+    text-transform: uppercase;
   }
   .button {
     display: inline-block;

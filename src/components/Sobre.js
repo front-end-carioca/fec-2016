@@ -16,7 +16,7 @@ class Sobre extends Component {
           <Row>
             <Col xs={12}>
               <div className="content">
-                <h2 className="section-title">SOBRE</h2>
+                <h2 className="section-title">Sobre</h2>
                 <p>O Front-end Carioca Surgiu de uma idéia dentro da comunidade de desenvolvedores web, tendo como obijetivo enriquecer o conhecimento profissional através de ciclos de palestras, workshops, networking e é claro bastante incentivo.</p>
                 <p>Em 2014, na Universidade Veiga de Almeida (UVA), realizamos nossa primeira edição e com certeza foi um sucesso, fizemos de tudo para apresentar um ótimo conteúdo aos participantes.</p>
                 <p>Em 2015, realizamos nossa segunda edição no Hotel Transamerica na barra da tijuca, onde equilibramos os assuntos e tentar proporcionar o melhor evento do RJ.</p>

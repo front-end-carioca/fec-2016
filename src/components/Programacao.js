@@ -8,7 +8,7 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 const Programacao = ({name, programacao, children}) => {
   return (
     <section className="section programacao" id={name}>
-      <h2 className="section-title">PROGRAMAÇÃO</h2>
+      <h2 className="section-title">Programação</h2>
       <Tab.Container id="tabs-programacao" defaultActiveKey="tab0">
         <Row className="clearfix">
           <Col sm={12}>

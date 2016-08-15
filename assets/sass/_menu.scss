@@ -1,6 +1,6 @@
 @include respond-to('basic') {
   .navbar-default {
-    background: #363C44;
+    background: $color-gray;
     border: none;
     box-shadow:none;
     .navbar {
