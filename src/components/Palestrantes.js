@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/lib/Col';
 
 const Palestrantes = ({name, palestrantes, toggleDetails}) =>
   <section className="section" id={name}>
-    <h2 className="section-title">PALESTRANTES</h2>
+    <h2 className="section-title">Palestrantes</h2>
     <h3 className="section-subtitle"><span>Veja a lista dos nossos palestrantes do evento</span></h3>
     <Grid>
       <Row>
@@ -16,11 +16,12 @@ const Palestrantes = ({name, palestrantes, toggleDetails}) =>
         return <Col key={i} xs={12} sm={6} md={4}>
           <div className="palestrante">
             <img className="avatar" src={avatar}/>
-            {(typeof window !== 'undefined' && 'ontouchstart' in window ?
+            {(typeof window !== 'undefined' && 'ontouchstart' in window &&
               <button className="more-details" onClick={toggleDetails.bind(this, i)}>
-                <i className="material-icons">more_vert</i>
-              </button> :
-              ''
+                <svg className="btn-details-icon" viewBox="0 0 50 50">
+                  <use xlinkHref="#vertical-dots"></use>
+                </svg>
+              </button>
             )}
             <div className={`details ${classOpened}`} >
               <h2 className="name">{name}</h2>

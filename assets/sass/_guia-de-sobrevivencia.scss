@@ -12,14 +12,18 @@
       &.active>a,
       &.active>a:focus,
       &.active>a:hover {
-        border-bottom: 1px solid #363C44;
-        color: #363C44;
+        border-bottom: 1px solid $color-gray;
+        color: $color-gray;
       }
     }
   }
   .tab-pane {
     .card {
-      background: #363C44;
+      background: $color-gray;
+
+      > a {
+        color: $color-yellow;
+      }
     }
   }
 

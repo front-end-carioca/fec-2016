@@ -12,7 +12,7 @@ class Patrocinio extends Component {
     const {name, patrocinadores, children} = this.props;
     return (
       <section className="section patrocinadores" id={name}>
-        <h2 className="section-title">PATROCINADORES</h2>
+        <h2 className="section-title">Patrocinadores</h2>
         <Grid>
           <Row>
             <Col xs={12}>
