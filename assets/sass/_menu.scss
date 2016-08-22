@@ -9,7 +9,7 @@
         >li {
           >a {
             color:#FFF;
-            padding: 15px 10px;
+            padding: 12px 10px;
             text-shadow: none;
             &:hover, &:focus {
               color:#666;
@@ -41,7 +41,6 @@
       }
       &-brand {
         align-items: center;
-        display: flex;
         height: auto;
         padding: 10px 15px;
         > img {
