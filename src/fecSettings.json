@@ -2,25 +2,25 @@
   "sectionSelected": "header",
   "items": [{
     "name": "header",
-    "label": "INÍCIO"
+    "label": "Início"
   },{
     "name": "sobre",
-    "label": "SOBRE"
+    "label": "Sobre"
   },{
     "name": "palestrantes",
-    "label": "PALESTRANTES"
+    "label": "Palestrantes"
   },{
     "name": "programacao",
-    "label": "PROGRAMAÇÃO"
+    "label": "Programação"
   },{
     "name": "patrocinio",
-    "label": "PATROCÍNIO"
+    "label": "Patrocínio"
   },{
     "name": "local",
-    "label": "LOCAL"
+    "label": "Local"
   },{
     "name": "guia-de-sobrevivencia",
-    "label": "GUIA DE SOBREVIVÊNCIA"
+    "label": "Guia de sobrevicência"
   }],
   "palestrantes": [{
     "name": "Jéssica Pereira",

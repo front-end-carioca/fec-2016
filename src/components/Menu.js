@@ -56,6 +56,7 @@ class Menu extends Component {
                 key={i}
                 eventKey={i}
                 active={item.selected}
+                className='nav-item'
                 componentClass={Link}
                 to={item.name} spy={true}
                 smooth={true} offset={-89} duration={1000}
