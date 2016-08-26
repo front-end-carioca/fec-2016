@@ -17,11 +17,11 @@ class Menu extends Component {
   componentDidMount() {
 
     Events.scrollEvent.register('begin', (to, element) => {
-      console.log("begin", arguments) ;
+      console.log('begin', arguments) ;
     });
 
     Events.scrollEvent.register('end', (to, element) => {
-      console.log("end", arguments);
+      console.log('end', arguments);
       this.props.onSelect(to);
     });
 

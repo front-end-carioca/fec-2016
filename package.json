@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp start",
     "build": "NODE_ENV=production gulp dist --production",
-    "lint": "npm run lint"
+    "lint": "./node_modules/.bin/eslint src"
   },
   "config": {
     "ghooks": {

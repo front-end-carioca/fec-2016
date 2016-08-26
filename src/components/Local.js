@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import GoogleMap from "react-google-maps/lib/GoogleMap";
-import GoogleMapLoader from "react-google-maps/lib/GoogleMapLoader";
-import Marker from "react-google-maps/lib/Marker";
+import GoogleMap from 'react-google-maps/lib/GoogleMap';
+import GoogleMapLoader from 'react-google-maps/lib/GoogleMapLoader';
+import Marker from 'react-google-maps/lib/Marker';
 
 const Local = ({name}) => {
   const markers = [{
@@ -9,7 +9,7 @@ const Local = ({name}) => {
       lat: -22.9015537,
       lng: -43.1770694,
     },
-    key: `Local do Evento`,
+    key: 'Local do Evento',
     defaultAnimation: 2,
   }];
   return (
