@@ -5,7 +5,7 @@ module.exports = `<!doctype html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- vendor:css -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css' />
     <link href="css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <!-- endinject -->
     <!-- inject:css -->
