@@ -5,7 +5,7 @@ const Subscribe = (props) => {
   return (
     <div className={`subscribe ${props.direction ? props.direction : ''}`}>
       <h2 className="title">Venha participar</h2>
-      <a href="http://even.tc/front-end-carioca-2016" className="submit" target="_blank">Inscreva-se</a>
+      <a href="http://even.tc/front-end-carioca-2016" className="btn btn-primary" target="_blank">Inscreva-se</a>
     </div>
   );
 }

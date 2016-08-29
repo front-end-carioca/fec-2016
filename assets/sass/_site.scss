@@ -24,7 +24,8 @@ button {
 
 .btn {
   &,
-  &:hover {
+  &:hover,
+  &:focus {
     text-shadow: none;
   }
 }
@@ -38,9 +39,10 @@ button {
   background: $color-yellow;
   border-color: $color-yellow;
   color: $color-gray;
-  &:hover {
-    background: #EFBF17;
-    border-color: #EFBF17;
+  &:hover,
+  &:focus {
+    background: #00B29E;
+    border-color: #00B29E;
   }
 }
 .section {

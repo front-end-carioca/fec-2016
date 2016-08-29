@@ -17,11 +17,11 @@ class Menu extends Component {
   componentDidMount() {
 
     Events.scrollEvent.register('begin', (to, element) => {
-      console.log("begin", arguments) ;
+      console.log('begin', arguments) ;
     });
 
     Events.scrollEvent.register('end', (to, element) => {
-      console.log("end", arguments);
+      console.log('end', arguments);
       this.props.onSelect(to);
     });
 
@@ -56,6 +56,7 @@ class Menu extends Component {
                 key={i}
                 eventKey={i}
                 active={item.selected}
+                className='nav-item'
                 componentClass={Link}
                 to={item.name} spy={true}
                 smooth={true} offset={-89} duration={1000}
