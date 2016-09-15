@@ -19,8 +19,8 @@ class Patrocinio extends Component {
               <h2 className="status">PLATINUM</h2>
               <Row>
               {patrocinadores.Platinum.map((p, i) =>
-                <Col key={i} xs={12} className="patrocinador">
-                  <img  src={`img/patrocinadores/${p.image}`} title={p.name} width="300"/>
+                <Col key={i} xs={12} sm={6} className="patrocinador">
+                  <img  src={`img/patrocinadores/${p.image}`} title={p.name} />
                 </Col>
               )}
               </Row>
@@ -28,7 +28,7 @@ class Patrocinio extends Component {
           </Row>
           <Row>
             <Col xs={12}>
-              <h2 className="status">VIP</h2>
+              <h2 className="status"></h2>
               <Row>
               {patrocinadores.Vip.map((p, i) =>
                 <Col key={i} xs={12} className="patrocinador">
@@ -63,7 +63,7 @@ class Patrocinio extends Component {
             </Col>
 
             <Col xs={12} sm={4}>
-              <h2 className="status"></h2>
+              <h2 className="status">BRONZE</h2>
               <Row>
               {patrocinadores.Bronze.map((p, i) =>
                 <Col key={i} xs={12} className="patrocinador">
@@ -80,7 +80,7 @@ class Patrocinio extends Component {
               <Row>
                 {patrocinadores.Apoio.map((p, i) =>
                   <Col key={i} xs={12} sm={4} className="patrocinador">
-                    <img src={`img/patrocinadores/${p.image}`} title={p.name} width="140" />
+                    <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                   </Col>
                 )}
               </Row>
