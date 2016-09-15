@@ -71,24 +71,26 @@
     "name": "Cezar Augusto",
     "expecialidade": "Web Developer na TUUT",
     "avatar": "img/avatars/avatar-cezar.jpg",
-    "description":""
+    "description":"Dropout de Fisica pela UFF e de Matematica pela UFRJ. Entre navegadores e servidores. Core do Brave Browser e fundador da NodeSchool Niteroi. Web Developer na TUUT."
   },{
-    "name": "Asael Arenas",
-    "expecialidade": "Community Manager da Toptal na América Latina",
-    "avatar": "img/avatars/avatar-asael.jpg",
-    "description":"Community Manager da Toptal na América Latina. Mais de 15 anos de experiência em ciência da informação e mídia na Internet. Comprometido em usar tecnologia para desenvolver aplicações úteis e atrativas para usuários, e eficiente para os clientes; para o benefício do comércio, pesquisa, entretenimento e educação."
+    "name": "Igor Santos",
+    "expecialidade": "Desenvolvedor PHP/React Freelancer na Toptal",
+    "avatar": "img/avatars/avatar-igor.jpg",
+    "description":"Trabalha com desenvolvimento web há mais de 8 anos, sendo pelo menos 4 destes com aplicações JS e sistemas REST. Atualmente é freelancer remoto para empresas estrangeiras na Toptal. Dedica tempo livre a projetos open-source, pet projects e ao grupo de desenvolvedores PHP local, o PHPRio."
   }],
   "patrocinadores": {
-    "Platinum": [{"name":"Toptal", "image": "toptal.png"}],
-    "Vip": [{"name": "B2W Digital", "image": "b2w.png" }],
+    "Platinum": [
+      {"name": "B2W Digital", "image": "b2w.jpg" },
+      {"name":"Toptal", "image": "toptal.png"}
+    ],
+    "Vip": [],
     "Ouro": [],
-    "Prata": [{"name": "Senac RJ", "image": "senac.jpg" }],
-    "Bronze": [],
+    "Prata": [{"name": "vivareal", "image": "vivareal.png"}],
+    "Bronze": [{"name": "acrio", "image": "acrio.jpg"}],
     "Apoio": [
       {"name": "Eventick", "image": "eventick.png"},
       {"name": "Braziljs", "image": "braziljs.png"},
-      {"name": "vivareal", "image": "vivareal.png"},
-      {"name": "acrio", "image": "acrio.jpg"}
+      {"name": "Braziljs", "image": "casa-do-codigo.png"}
     ]
   },
   "programacao": [
@@ -171,10 +173,10 @@
           "descricao": "Você já ouviu falar de Elm? uma nova tecnologia que vem ganhando seu espaço no mundo Front-end."
       },{
           "horario": "15:10 - 15:55",
-          "titulo": "Trabalho remoto virou realidade",
-          "palestrante": "Asael Arenas",
+          "titulo": "REST-fuuuu",
+          "palestrante": "Igor Santos",
           "especialidade": "",
-          "descricao": "O trabalho mudou. As tendências adotadas na época da Revolução Industrial deveriam ser revistas hoje em dia."
+          "descricao": "Conheça o conceito RESTful e boas práticas para criação e consumo de APIs."
       },{
           "horario": "16:00 - 16:30",
           "titulo": "Coffee-Break & Networking",
@@ -189,10 +191,10 @@
           "descricao": "A palestra mostra algumas dicas a serem aplicadas no dia a dia que influenciam na performance de seu app."
       },{
           "horario": "17:15 - 17:30",
-          "titulo": "JS, o quanto você conhece?",
+          "titulo": "JavaScript: The bad parts*",
           "palestrante": "Cezar Augusto",
           "especialidade": "",
-          "descricao": "Você conhece bem JavaScript? E se eu fizesse algumas demonstrações importantes sobre ele para sua segurança."
+          "descricao": "Voce conhece JavaScript? Ou só as partes boas? Entenda algumas coisas engracadas (ou nao), do JavaScript."
       },{
           "horario": "17:35 - 18:15",
           "titulo": "Async/await com JavaScript",
