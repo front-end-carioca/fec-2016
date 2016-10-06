@@ -83,14 +83,20 @@
       {"name": "B2W Digital", "image": "b2w.jpg" },
       {"name":"Toptal", "image": "toptal.png"}
     ],
-    "Vip": [],
-    "Ouro": [],
+    "Vip": [
+      {"name": "umbler", "image": "umbler.png"},
+      {"name": "king-host", "image": "king-host.jpg"},
+      {"name": "uol", "image": "uol.jpg"},
+      {"name": "w2c", "image": "w3c.png"}
+    ],
+    "Ouro": [{"name": "pmc", "image": "pmc.png"}],
     "Prata": [{"name": "vivareal", "image": "vivareal.png"}],
     "Bronze": [{"name": "acrio", "image": "acrio.jpg"}],
     "Apoio": [
       {"name": "Eventick", "image": "eventick.png"},
       {"name": "Braziljs", "image": "braziljs.png"},
-      {"name": "Braziljs", "image": "casa-do-codigo.png"}
+      {"name": "cada-do-codigo", "image": "casa-do-codigo.png"},
+      {"name": "stickers-dev", "image": "stickerdev.png"}
     ]
   },
   "programacao": [
@@ -107,7 +113,7 @@
           "titulo": "Apresentação",
           "palestrante": "Organizadores",
           "especialidade": "",
-          "descricao": "Uma pequena introdução ao evento e passando as todas as dicas do dia que vamos precisar durante o evento."
+          "descricao": "Uma pequena introdução ao evento e passando todas as dicas do dia que vamos precisar durante o evento."
       },{
           "horario": "09:10 - 09:50",
           "titulo": "React Native",

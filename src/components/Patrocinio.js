@@ -28,11 +28,11 @@ class Patrocinio extends Component {
           </Row>
           <Row>
             <Col xs={12}>
-              <h2 className="status"></h2>
+              <h2 className="status">PATROCÍNIO BRAZILJS</h2>
               <Row>
               {patrocinadores.Vip.map((p, i) =>
-                <Col key={i} xs={12} className="patrocinador">
-                  <img src={`img/patrocinadores/${p.image}`} title={p.name} width="130"/>
+                <Col key={i} xs={12} sm={3} className="patrocinador">
+                  <img src={`img/patrocinadores/${p.image}`} title={p.name} width="180"/>
                 </Col>
               )}
               </Row>
@@ -41,7 +41,7 @@ class Patrocinio extends Component {
           <Row>
 
             <Col xs={12} sm={4}>
-              <h2 className="status"></h2>
+              <h2 className="status">OURO</h2>
               <Row>
               {patrocinadores.Ouro.map((p, i) =>
                 <Col key={i} xs={12} className="patrocinador">
@@ -79,7 +79,7 @@ class Patrocinio extends Component {
               <h2 className="status">APOIO</h2>
               <Row>
                 {patrocinadores.Apoio.map((p, i) =>
-                  <Col key={i} xs={12} sm={4} className="patrocinador">
+                  <Col key={i} xs={12} sm={3} className="patrocinador">
                     <img src={`img/patrocinadores/${p.image}`} title={p.name} />
                   </Col>
                 )}
