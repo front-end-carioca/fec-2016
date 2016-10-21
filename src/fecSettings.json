@@ -20,7 +20,7 @@
     "label": "Local"
   },{
     "name": "guia-de-sobrevivencia",
-    "label": "Guia de sobrevicência"
+    "label": "Guia de sobrevivência"
   }],
   "palestrantes": [{
     "name": "Jéssica Pereira",
@@ -53,10 +53,10 @@
     "avatar": "img/avatars/avatar-jhonatan.jpg",
     "description":"Desenvolvedor Javascript e iOS no PiggyPeg. Entusiasta de programação funcional."
   },{
-    "name": "Caio Gondim",
-    "expecialidade": "Booking.com",
-    "avatar": "img/avatars/avatar-caio.jpg",
-    "description":"Trabalho como JavaScript Developer na Booking.com há um tempo focado na criação de novos produtos e features da aplicação."
+    "name": "Emerson Thompson",
+    "expecialidade": "Avant SD",
+    "avatar": "img/avatars/avatar-emerson.jpg",
+    "description":"Amante de tecnologia e apaixonado pela web, é daqueles designers que se apaixonou no primeiro 'Hello Word'. Desenvolvedor há pouco mais de 6 anos, atualmente lidera a equipe de Front-End na Avant e Co-Fundador da StudioDev. Sempre a procura de compartilhar conhecimentos, nas horas vagas gosta de jogar Basquete, fazer zuada com violão, e se não tiver café nem chama porque ele não vai!"
   },{
     "name": "Sergio Lopes",
     "expecialidade": "Instrutor na Caelum",
@@ -77,6 +77,21 @@
     "expecialidade": "Desenvolvedor PHP/React Freelancer na Toptal",
     "avatar": "img/avatars/avatar-igor.jpg",
     "description":"Trabalha com desenvolvimento web há mais de 8 anos, sendo pelo menos 4 destes com aplicações JS e sistemas REST. Atualmente é freelancer remoto para empresas estrangeiras na Toptal. Dedica tempo livre a projetos open-source, pet projects e ao grupo de desenvolvedores PHP local, o PHPRio."
+  },{
+    "name": "Lucas Barros",
+    "expecialidade": "Lead Front-end Developer",
+    "avatar": "img/avatars/avatar-bradok.jpg",
+    "description":"Trabalha com desenvolvimento web há mais de 5 anos, e hoje está liderando o novo catálogo das marcas americanas.com, submarino, shoptime e soubarato"
+  },{
+    "name": "Luigui Delyer",
+    "expecialidade": "Front-end NPI, novos produtos, pesquisa e inovação",
+    "avatar": "img/avatars/avatar-luigui.jpg",
+    "description":"Ativista de software livre, Developer na WebRadar, Membro do time de WebCompat da Mozilla no Brasil e o curioso do IoT na AmoraLabs. Já fiz de tudo um pouco e nas horas vagas curto escutar música de bandas de qualidade duvidosa."
+  },{
+    "name": "Richard",
+    "expecialidade": "Pesquisador na Área de Inovação",
+    "avatar": "img/avatars/avatar-richard.jpg",
+    "description":"Atualmente trabalha como Pesquisador na Área de Inovação @ TV Globo, já trabalhou como Front-end e também é Co-founder @ FEMUG-RJ."
   }],
   "patrocinadores": {
     "Platinum": [
@@ -111,7 +126,7 @@
       },{
           "horario": "09:00 - 09:10",
           "titulo": "Apresentação",
-          "palestrante": "Organizadores",
+          "palestrante": "Pedro & Richard",
           "especialidade": "",
           "descricao": "Uma pequena introdução ao evento e passando todas as dicas do dia que vamos precisar durante o evento."
       },{
@@ -146,12 +161,12 @@
           "descricao": "Esse é o momento que separamos para premiar os participantes presentes com sorteios e desafios."
       },{
           "horario": "11:30 - 12:10",
-          "titulo": "Aplicações isomorphic e escaláveis",
-          "palestrante": "Carlos Baptista",
+          "titulo": "Desktop Apps com Electron",
+          "palestrante": "Emerson Thompson",
           "especialidade": "",
-          "descricao": "A palestrante fala de como podemos criar uma aplicação escalável e de alta performance."
+          "descricao": "Criando Aplicações Cross-Platform Desktop com Tecnologias Web(JS/HTML/CSS) usando o Electron."
       },{
-          "horario": "12:10 - 13:40",
+          "horario": "12:10 - 14:00",
           "titulo": "Hora de Almoçar, galera!",
           "palestrante": "",
           "especialidade": "",
@@ -160,53 +175,59 @@
     },{
       "periodo": "Tarde",
       "atividades": [{
-          "horario": "13:45 - 14:00",
+          "horario": "14:05 - 14:15",
           "titulo": "Vue.js Uma alternativa elegante",
           "palestrante": "Jonathan Pereira",
           "especialidade": "",
           "descricao": "A talk vai se resumir em comparar Vue.js com ReactJS e AngularJS, mostrando exemplos com Redux."
       },{
-          "horario": "14:05 - 14:45",
+          "horario": "14:20 - 15:00",
           "titulo": "AngularJS 2 & TypeScript",
           "palestrante": "William Grasel",
           "especialidade": "",
           "descricao": "Conheça o AngularJS 2 que está sensacional, mais performático e sincronizado com as ultimas tecnologias."
       },{
-          "horario": "14:50 - 15:05",
+          "horario": "15:05 - 15:20",
           "titulo": "Elm: Front-End do Jeito Certo",
           "palestrante": "Matheus Lima",
           "especialidade": "",
           "descricao": "Você já ouviu falar de Elm? uma nova tecnologia que vem ganhando seu espaço no mundo Front-end."
       },{
-          "horario": "15:10 - 15:55",
+          "horario": "15:25 - 16:05",
           "titulo": "REST-fuuuu",
           "palestrante": "Igor Santos",
           "especialidade": "",
           "descricao": "Conheça o conceito RESTful e boas práticas para criação e consumo de APIs."
       },{
-          "horario": "16:00 - 16:30",
+          "horario": "16:05 - 16:35",
           "titulo": "Coffee-Break & Networking",
           "palestrante": "",
           "especialidade": "",
           "descricao": "Aproveite o momento para fazer Networking com os outros participantes e dar uma descontraida."
       },{
-          "horario": "16:30 - 17:10",
-          "titulo": "Web Perfornamce",
-          "palestrante": "Sergio Lopes",
-          "especialidade": "",
-          "descricao": "A palestra mostra algumas dicas a serem aplicadas no dia a dia que influenciam na performance de seu app."
+        "horario": "16:40 - 16:55",
+        "titulo": "Aplicações isomorphic e escalável",
+        "palestrante": "Lucas Barros",
+        "especialidade": "",
+        "descricao": "A palestrante fala de como podemos criar uma aplicação escalável e de alta performance."
       },{
-          "horario": "17:15 - 17:30",
+          "horario": "17:00 - 17:15",
           "titulo": "JavaScript: The bad parts*",
           "palestrante": "Cezar Augusto",
           "especialidade": "",
           "descricao": "Voce conhece JavaScript? Ou só as partes boas? Entenda algumas coisas engracadas (ou nao), do JavaScript."
       },{
-          "horario": "17:35 - 18:15",
-          "titulo": "Async/await com JavaScript",
-          "palestrante": "Caio Godim",
-          "especialidade": "",
-          "descricao": "O Objetivo da palestra será comentar e desmistificar o uso de algumas novas especificações de ES6/ES7."
+        "horario": "17:20 - 18:00",
+        "titulo": "Web Performance",
+        "palestrante": "Sergio Lopes",
+        "especialidade": "",
+        "descricao": "A palestra mostra algumas dicas a serem aplicadas no dia a dia que influenciam na performance de seu app."
+      },{
+        "horario": "18:05 - 18:20",
+        "titulo": "Templatizando a vida como um Ninja",
+        "palestrante": "Luigui Delyer",
+        "especialidade": "",
+        "descricao": "Pug, uma linguagem de templates com foco em código limpo, claro e produtividade acima de tudo."
       },{
           "horario": "18:20 - 18:30",
           "titulo": "Encerramento",
